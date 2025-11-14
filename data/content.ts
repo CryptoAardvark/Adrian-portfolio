@@ -186,3 +186,131 @@ export const certifications = [
   },
 ];
 
+export const skillsSummary = {
+  headline: "Product-Focused Full-Stack & AI Engineer",
+  description:
+    "I help founders and product teams ship reliable, elegant experiences across web, data, and AI. Comfortable operating from architecture through polished UI.",
+  stack:
+    "React · Next.js · TypeScript · Node.js · Go · Python · LangChain · AWS · Supabase · PostgreSQL",
+  achievements: [
+    {
+      title: "Shipped complex AI workflows",
+      description: "Built RAG assistants, semantic search, and eval loops with safety guardrails.",
+    },
+    {
+      title: "Scaled cloud platforms",
+      description: "Delivered multi-region infra with Kubernetes, tRPC APIs, and observability baked-in.",
+    },
+    {
+      title: "Partnered from 0 → 1",
+      description: "Worked with founders to translate vision into shipping roadmaps and GTM-ready MVPs.",
+    },
+    {
+      title: "Champion developer experience",
+      description: "Defined design systems, docs, and testing pipelines that keep teams moving fast.",
+    },
+  ],
+};
+
+export const skillCategories = [
+  {
+    title: "Programming Languages",
+    icon: "laptop",
+    bullets: [
+      "TypeScript / JavaScript (Expert)",
+      "Go + Python for backend & AI systems",
+      "Rust (for perf-sensitive services)",
+      "SQL (PostgreSQL, ClickHouse) & GraphQL",
+    ],
+  },
+  {
+    title: "Backend & Distributed",
+    icon: "network",
+    bullets: [
+      "Event-driven microservices, CQRS, clean architecture",
+      "REST/gRPC, tRPC, GraphQL gateways",
+      "Caching, rate limiting, resiliency patterns",
+      "Observability: OpenTelemetry, Grafana, Datadog",
+    ],
+  },
+  {
+    title: "AI / ML & Data",
+    icon: "ai",
+    bullets: [
+      "RAG pipelines with LangChain/LangGraph, Pinecone, pgvector",
+      "Model serving & evaluation with Vercel AI SDK, Modal, SageMaker",
+      "Feature stores, embeddings, semantic search",
+      "Data engineering with Kafka, Airflow, dbt",
+    ],
+  },
+  {
+    title: "Cloud & DevOps",
+    icon: "cloud",
+    bullets: [
+      "AWS, GCP, Vercel, Fly.io",
+      "Kubernetes, Docker, Terraform, Pulumi",
+      "CI/CD with GitHub Actions, Argo, Temporal workflows",
+      "Security/Compliance: SOC2, secret management, SBOM",
+    ],
+  },
+  {
+    title: "Frontend Collaboration",
+    icon: "palette",
+    bullets: [
+      "React/Next.js SSR, streaming, app router",
+      "Design systems, responsive UI, accessibility",
+      "Figma-to-production workflows",
+      "Animation & interactions with Framer Motion",
+    ],
+  },
+  {
+    title: "Architecture & Leadership",
+    icon: "compass",
+    bullets: [
+      "Technical strategy, RFCs, ADRs",
+      "Agile product planning, backlog shaping",
+      "Mentoring, pairing, hiring loops",
+      "Cross-functional collaboration w/ product & design",
+    ],
+  },
+];
+
+export const skillHighlights = [
+  {
+    icon: "stack",
+    title: "Backend Engineering",
+    description:
+      "Design and ship highly-performant services using Go, Node.js, and TypeScript with clean contracts and robust testing.",
+  },
+  {
+    icon: "spark",
+    title: "AI/ML Engineering",
+    description:
+      "Translate business workflows into LLM-powered assistants, retrieval systems, and automation with observability and evals.",
+  },
+  {
+    icon: "cloud",
+    title: "Cloud & DevOps",
+    description:
+      "Scale infrastructure with Kubernetes, Terraform, and automated pipelines to keep deployments safe and frequent.",
+  },
+  {
+    icon: "brush",
+    title: "Frontend Craft",
+    description:
+      "Deliver polished interfaces with React/Next.js, modern visual systems, and pixel-level attention to UX details.",
+  },
+  {
+    icon: "data",
+    title: "Data & Integrations",
+    description:
+      "Build analytics layers, ETL jobs, and integrations across CRMs, billing, and internal services with clear ownership.",
+  },
+  {
+    icon: "compass",
+    title: "Product Leadership",
+    description:
+      "Partner with stakeholders, shape roadmaps, and ensure technical decisions align with business outcomes.",
+  },
+];
+
