@@ -1,4 +1,5 @@
 import type { ComponentProps } from "react";
+import Link from "next/link";
 import { ProjectCard } from "./ProjectCard";
 
 type Project = ComponentProps<typeof ProjectCard>["project"];
@@ -22,12 +23,12 @@ export function ProjectsPreview({ projects }: ProjectsPreviewProps) {
             A condensed look at recent AI, platform, and product launches.
           </p>
         </div>
-        <a
-          href="#contact"
+        <Link
+          href="/portfolio"
           className="self-start rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/5"
         >
           View full portfolio
-        </a>
+        </Link>
       </div>
       <div className="grid gap-6 lg:grid-cols-3">
         {projects.map((project) => (
