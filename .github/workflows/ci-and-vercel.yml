@@ -9,59 +9,78 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     env:
-      # Force lightningcss to use the WASM fallback in CI where native bindings
-      # may not be available. This avoids "Cannot find module '../lightningcss.*.node'" errors.
+      # Fix lightningcss native binary issues during CI builds
       LIGHTNING_CSS_USE_WASM: 'true'
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Use Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci --unsafe-perm
-        working-directory: ./
+        run: npm ci
 
-      - name: Build
+      - name: Build Next.js project
         run: npm run build
-        working-directory: ./
+
+      # Save build artifacts for preview/prod deployments
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: .next/
 
   deploy-preview:
     needs: build
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Deploy to Vercel (preview)
-        uses: amondnet/vercel-action@v21
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build
+          path: .next/
+
+      - name: Deploy to Vercel (Preview)
+        uses: vercel/action@v2
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           working-directory: ./
-          alias-domain: ''
-          vercel-args: '--prebuilt'
+          prod: false
 
   deploy-prod:
     needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Deploy to Vercel (production)
-        uses: amondnet/vercel-action@v21
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build
+          path: .next/
+
+      - name: Deploy to Vercel (Production)
+        uses: vercel/action@v2
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           working-directory: ./
-          vercel-args: '--prebuilt --prod'
+          prod: true
