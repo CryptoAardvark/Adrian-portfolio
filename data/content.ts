@@ -314,3 +314,23 @@ export const skillHighlights = [
   },
 ];
 
+export const contactInfo = {
+  subtitle: "Let's connect and discuss potential opportunities",
+  details: [
+    { type: "country", label: "Country", value: "United States", icon: "location" },
+    { type: "city", label: "City", value: "Sunnyvale, CA", icon: "location" },
+    { type: "email", label: "Email", value: "m.shatov.sacr@gmail.com", icon: "email", href: "mailto:m.shatov.sacr@gmail.com" },
+    { type: "phone", label: "Phone", value: "+1 (909) 729-1297", icon: "phone", href: "tel:+19097291297" },
+  ],
+  socialLinks: [
+    { name: "GitHub", href: "https://github.com", icon: "github" },
+    { name: "LinkedIn", href: "https://linkedin.com", icon: "linkedin" },
+    { name: "Email", href: "mailto:m.shatov.sacr@gmail.com", icon: "email" },
+  ],
+};
+
+export const contactForm = {
+  title: "Get In Touch",
+  subtitle: "Send me a message and I'll get back to you as soon as possible.",
+};
+
