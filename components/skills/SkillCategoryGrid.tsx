@@ -1,5 +1,6 @@
 "use client";
 
+import type React from "react";
 import { motion } from "framer-motion";
 import type { skillCategories as skillCategoriesData } from "@/data/content";
 
@@ -11,7 +12,7 @@ type SkillCategoryGridProps = {
 
 const iconVariants: Record<
   SkillCategory["icon"],
-  { gradient: string; svg: JSX.Element }
+  { gradient: string; svg: React.ReactElement }
 > = {
   laptop: {
     gradient: "from-[#5DE0F5] via-[#4D9DE0] to-[#8358FF]",

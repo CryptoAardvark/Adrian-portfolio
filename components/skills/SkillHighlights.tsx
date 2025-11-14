@@ -1,7 +1,6 @@
 "use client";
 
-"use client";
-
+import type React from "react";
 import { motion } from "framer-motion";
 import type { skillHighlights as skillHighlightsData } from "@/data/content";
 
@@ -13,7 +12,7 @@ type SkillHighlightsProps = {
 
 const highlightIcons: Record<
   SkillHighlight["icon"],
-  { gradient: string; svg: JSX.Element }
+  { gradient: string; svg: React.ReactElement }
 > = {
   stack: {
     gradient: "from-[#5DE0F5] via-[#004CFB] to-[#6B73FF]",
