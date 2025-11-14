@@ -6,7 +6,7 @@ export const heroContent = {
   highlight: "React · Next.js · Node.js · AI/LLMs · Cloud",
   primaryCta: {
     label: "Explore Portfolio",
-    href: "#projects",
+    href: "/portfolio",
   },
   secondaryCta: {
     label: "Download Resume",
