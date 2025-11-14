@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type HeroContent = {
   badge: string;
   title: string;
@@ -34,18 +36,18 @@ export function Hero({ content }: HeroProps) {
             {content.highlight}
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
-            <a
+            <Link
               href={content.primaryCta.href}
               className="inline-flex items-center justify-center rounded-full bg-[var(--accent-500)] px-6 py-3 text-sm font-semibold text-black transition hover:bg-[var(--accent-400)]"
             >
               {content.primaryCta.label}
-            </a>
-            <a
+            </Link>
+            <Link
               href={content.secondaryCta.href}
               className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/40"
             >
               {content.secondaryCta.label}
-            </a>
+            </Link>
           </div>
         </div>
         <div className="relative flex items-center justify-center">
