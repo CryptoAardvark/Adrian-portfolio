@@ -10,11 +10,28 @@ type EducationGridProps = {
 };
 
 export function EducationGrid({ education }: EducationGridProps) {
+  const icon = (
+    <svg viewBox="0 0 24 24" className="h-5 w-5 text-black/80" aria-hidden>
+      <path
+        d="M3 7.5 12 4l9 3.5-9 3.5-9-3.5Zm0 0V17c0 1 4 3 9 3s9-2 9-3V7.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12 11v9"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+
   return (
     <section className="rounded-[var(--radius-lg)] border border-white/5 bg-white/[0.02] px-8 py-10 shadow-[0_40px_120px_rgba(5,6,14,0.65)]">
       <div className="mb-8 flex items-center gap-3">
-        <span className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-[var(--accent-500)]">
-          📚
+        <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-[#5DE0F5] via-[#4D9DE0] to-[#8358FF] shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
+          {icon}
         </span>
         <div>
           <p className="text-sm uppercase tracking-[0.3em] text-[var(--text-muted)]">
