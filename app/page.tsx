@@ -7,6 +7,7 @@ import { SkillsGrid } from "@/components/SkillsGrid";
 import { Testimonials } from "@/components/Testimonials";
 import { ContactCTA } from "@/components/ContactCTA";
 import { Footer } from "@/components/Footer";
+import { BackgroundSection } from "@/components/background/BackgroundSection";
 import {
   heroContent,
   metrics,
@@ -26,6 +27,7 @@ export default function Home() {
         <ProjectsPreview projects={featuredProjects} />
         <AboutShort />
         <SkillsGrid skills={skillStack} />
+        <BackgroundSection />
         <Testimonials testimonials={testimonials} />
         <ContactCTA {...contactCta} />
       </main>

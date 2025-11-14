@@ -110,3 +110,79 @@ export const contactCta = {
   buttonHref: "mailto:hello@example.com",
 };
 
+export const experienceTimeline = [
+  {
+    company: "Harvest LLC",
+    role: "Lead AI & Backend Engineer",
+    period: "2025 · Contract · Remote",
+    location: "Wilmington, DE",
+    highlights: [
+      "Shipped RAG/semantic search (LangChain + Pinecone) with enterprise guardrails.",
+      "Architected Go + TypeScript backend for streaming ETL, APIs, knowledge graph services.",
+      "Delivered modern React dashboards and data visualization systems for ops teams.",
+    ],
+  },
+  {
+    company: "Laboro",
+    role: "Senior Full-Stack Engineer",
+    period: "2023 – 2024 · Hybrid",
+    location: "San Francisco, CA",
+    highlights: [
+      "Led performance-focused frontend revamp, improving FCP by 42%.",
+      "Implemented AI job-matching pipelines with Kubernetes + Supabase.",
+      "Built analytics suite enabling product managers to track hiring funnel health.",
+    ],
+  },
+  {
+    company: "Atlas Cloud",
+    role: "Founding Engineer",
+    period: "2020 – 2023 · Startup",
+    location: "New York, NY",
+    highlights: [
+      "Owned architecture across Next.js, tRPC APIs, and multi-region PostgreSQL.",
+      "Launched no-code automation builder used by 200+ internal teams.",
+      "Stood up CI/CD, observability, and security guardrails for rapid releases.",
+    ],
+  },
+];
+
+export const educationHistory = [
+  {
+    school: "Belgrade Shukhov State Tech University",
+    degree: "Master’s — Automotive Engineering Technology",
+    period: "1997 – 2003",
+    summary:
+      "U.S. equivalency approved (Bachelor’s + Master’s). Focus on control systems, computational mechanics, and applied math.",
+  },
+  {
+    school: "Stanford Continuing Studies",
+    degree: "Certificate — Product Strategy for Engineers",
+    period: "2022",
+    summary:
+      "Blended user research, experimentation frameworks, and financial modeling to guide technical decisions.",
+  },
+];
+
+export const certifications = [
+  {
+    title: "C++ Certification",
+    issuer: "Coding Game",
+    year: "2025",
+  },
+  {
+    title: "Node.js Certification",
+    issuer: "IBM",
+    year: "2023",
+  },
+  {
+    title: "AWS Cloud Quest: Cloud Practitioner",
+    issuer: "AWS",
+    year: "2023",
+  },
+  {
+    title: "AWS Fundamentals",
+    issuer: "AWS",
+    year: "2022",
+  },
+];
+
