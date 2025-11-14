@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --base-50: #f6f7fb;
+  --base-100: #eef1f8;
+  --base-200: #d8ddea;
+  --base-300: #b2b9d1;
+  --base-400: #7d859e;
+  --base-700: #1f2337;
+  --base-800: #151829;
+  --base-900: #0e101d;
+  --base-950: #05060e;
+
+  --accent-400: #64ffe0;
+  --accent-500: #3fe9c5;
+  --accent-600: #1dd5a8;
+  --accent-glow: 0 10px 40px rgba(63, 233, 197, 0.4);
+
+  --text-primary: #f8f9ff;
+  --text-muted: rgba(248, 249, 255, 0.7);
+  --card-bg: rgba(15, 18, 32, 0.85);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+
+  --radius-lg: 32px;
+  --radius-md: 20px;
+  --radius-sm: 12px;
+
+  --section-spacing: clamp(4rem, 8vw, 6.5rem);
+  --container-width: 1200px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  color-scheme: dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans), "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background-color: var(--base-950);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+.page-shell {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.glass-surface {
+  background: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(20px);
 }
