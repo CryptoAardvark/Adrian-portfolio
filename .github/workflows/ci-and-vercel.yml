@@ -60,13 +60,13 @@ jobs:
           path: .next/
 
       - name: Deploy to Vercel (Preview)
-        uses: vercel/action@v2
+        uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel-args: '--prod=false'
           working-directory: ./
-          prod: false
 
   deploy-prod:
     needs: build
@@ -84,10 +84,10 @@ jobs:
           path: .next/
 
       - name: Deploy to Vercel (Production)
-        uses: vercel/action@v2
+        uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel-args: '--prod'
           working-directory: ./
-          prod: true
