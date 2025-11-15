@@ -37,13 +37,6 @@ jobs:
           LIGHTNING_CSS_USE_WASM: 'true'
         run: npm run build
 
-      # Save build artifacts for preview/prod deployments
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: build
-          path: .next/
-
   deploy-preview:
     needs: build
     if: github.event_name == 'pull_request'
@@ -52,12 +45,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: build
-          path: .next/
 
       - name: Deploy to Vercel (Preview)
         uses: amondnet/vercel-action@v25
@@ -76,12 +63,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: build
-          path: .next/
 
       - name: Deploy to Vercel (Production)
         uses: amondnet/vercel-action@v25
