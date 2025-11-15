@@ -1,6 +1,6 @@
 "use client";
 
-import type React from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import type { skillHighlights as skillHighlightsData } from "@/data/content";
 
