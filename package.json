@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "cross-env LIGHTNING_CSS_USE_WASM=true next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "node scripts/postinstall.js"
   },
   "dependencies": {
     "framer-motion": "^12.23.24",

@@ -26,8 +26,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # Use npm install to ensure optional dependencies (native bindings) are installed
-          # npm ci sometimes skips optional dependencies which breaks Tailwind CSS v4
+          # Workaround for npm bug with optional dependencies (https://github.com/npm/cli/issues/4828)
+          # Remove node_modules to force fresh install of optional dependencies
+          rm -rf node_modules
+          # Install dependencies (postinstall script will ensure optional deps are installed)
           npm install
 
       - name: Build Next.js project
