@@ -28,6 +28,8 @@ jobs:
         run: npm ci
 
       - name: Build Next.js project
+        env:
+          LIGHTNING_CSS_USE_WASM: 'true'
         run: npm run build
 
       # Save build artifacts for preview/prod deployments
