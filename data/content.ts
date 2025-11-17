@@ -249,11 +249,6 @@ export const skillsSummary = {
         "Implemented ingestion and preprocessing pipelines for embeddings, pgvector/Pinecone indexing, schema-drift detection, dedup, and lineage tracking for auditability.",
     },
     {
-      title: "AI Safety, Evaluation & Monitoring",
-      description:
-        "Added prompt-injection defenses, role/intent validation, guardrails, redaction, and continuous eval loops (Ragas/TruLens) with telemetry for drift, cost, and hallucinations.",
-    },
-    {
       title: "Distributed Systems for AI",
       description:
         "Architected scalable Go/Python microservices with REST/gRPC APIs, concurrency tuning, caching, and backpressure — supporting high-throughput AI workloads.",
