@@ -45,7 +45,7 @@ export const featuredProjects = [
     description: "AI-powered operations console for logistics teams.",
     outcome: "Reduced manual triage time by 60% through real-time insights.",
     tags: ["Next.js", "LangChain", "Supabase"],
-    image: "/images/projects/atlas.png",
+    image: "/image/projects/1/1.jpg",
     link: "#",
   },
   {
@@ -54,7 +54,7 @@ export const featuredProjects = [
     description: "Self-serve analytics toolkit for SaaS founders.",
     outcome: "Unlocked 99.9% uptime dashboards with streaming events.",
     tags: ["React", "Node.js", "ClickHouse"],
-    image: "/images/projects/pulse.png",
+    image: "/image/projects/2/2.jpg",
     link: "#",
   },
   {
@@ -63,7 +63,7 @@ export const featuredProjects = [
     description: "Workflow automation platform for fintech ops.",
     outcome: "Saved ops teams 20+ hours weekly through automation.",
     tags: ["Next.js", "tRPC", "PostgreSQL"],
-    image: "/images/projects/cobalt.png",
+    image: "/image/projects/3/3.jpg",
     link: "#",
   },
 ];

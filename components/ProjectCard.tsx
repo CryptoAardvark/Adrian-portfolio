@@ -15,10 +15,13 @@ type ProjectCardProps = {
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-[var(--radius-md)] border border-white/5 bg-white/[0.03]">
-      <div className="relative h-56 bg-gradient-to-br from-white/10 to-transparent">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="h-32 w-44 rounded-3xl border border-white/10 bg-white/5 shadow-[0_30px_90px_rgba(0,0,0,0.5)] transition duration-300 group-hover:scale-105" />
-        </div>
+      <div className="relative h-56 overflow-hidden bg-gradient-to-br from-white/10 to-transparent">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="h-full w-full object-cover rounded-b-none rounded-t-[var(--radius-md)] transition duration-300 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
       </div>
       <div className="flex flex-1 flex-col gap-5 p-6">
         <div>
