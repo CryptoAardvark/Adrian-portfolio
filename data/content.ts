@@ -101,7 +101,7 @@ export const featuredProjects = [
       "FastAPI",
       "React"
     ],
-    image: "/image/projects/1/5.jpg",
+    image: "/image/projects/3/3.jpg",
     link: "#",
   },
 ];
