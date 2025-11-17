@@ -227,27 +227,31 @@ export const certifications = [
 ];
 
 export const skillsSummary = {
-  headline: "Product-Focused Full-Stack & AI Engineer",
+  headline: "Senior AI Infrastructure & Distributed Backend Engineer.",
   description:
-    "I help founders and product teams ship reliable, elegant experiences across web, data, and AI. Comfortable operating from architecture through polished UI.",
+    "I design and operate high-performance backend systems, data pipelines, and production AI/LLM infrastructure. Skilled across microservices, cloud platforms, and large-scale ingestion with a deep focus on reliability, performance, and observability.",
   stack:
-    "React · Next.js · TypeScript · Node.js · Go · Python · LangChain · AWS · Supabase · PostgreSQL",
+    "Go • Python • Tensorflow/PyTorch • AWS/Kubernetes • REST/gRPC • RAG & Vector Search (Pinecone/FAISS/pgvector) • LangChain/LangGraph • MLOps (SageMaker/Vertex, MLflow, CI/CD)",
   achievements: [
     {
-      title: "Shipped complex AI workflows",
-      description: "Built RAG assistants, semantic search, and eval loops with safety guardrails.",
+      title: "Production LLM & AI Systems",
+      description:
+        "Designed and deployed real-time LLM inference services, function-calling pipelines, JSON-schema guards, and multi-model routing with cost/latency SLOs.",
     },
     {
-      title: "Scaled cloud platforms",
-      description: "Delivered multi-region infra with Kubernetes, tRPC APIs, and observability baked-in.",
+      title: "Advanced RAG Architectures",
+      description:
+        "Built hybrid retrieval systems (BM25 + embeddings), rerankers, expandable vector stores, semantic search APIs, and automated document chunking/metadata pipelines.",
     },
     {
-      title: "Partnered from 0 → 1",
-      description: "Worked with founders to translate vision into shipping roadmaps and GTM-ready MVPs.",
+      title: "Data & Vector Infrastructure",
+      description:
+        "Implemented ingestion and preprocessing pipelines for embeddings, pgvector/Pinecone indexing, schema-drift detection, dedup, and lineage tracking for auditability.",
     },
     {
-      title: "Champion developer experience",
-      description: "Defined design systems, docs, and testing pipelines that keep teams moving fast.",
+      title: "Distributed Systems for AI",
+      description:
+        "Architected scalable Go/Python microservices with REST/gRPC APIs, concurrency tuning, caching, and backpressure — supporting high-throughput AI workloads.",
     },
   ],
 };
@@ -258,39 +262,73 @@ export const skillCategories = [
     icon: "laptop",
     bullets: [
       "TypeScript / JavaScript (Expert)",
-      "Go + Python for backend & AI systems",
+      "Python (Expert)",
+      "Go/Golang (Expert)",
       "Rust (for perf-sensitive services)",
-      "SQL (PostgreSQL, ClickHouse) & GraphQL",
+      "C++ (Advanced)",
+      "Java (Advanced)",
     ],
   },
   {
     title: "Backend & Distributed",
     icon: "network",
     bullets: [
-      "Event-driven microservices, CQRS, clean architecture",
-      "REST/gRPC, tRPC, GraphQL gateways",
-      "Caching, rate limiting, resiliency patterns",
-      "Observability: OpenTelemetry, Grafana, Datadog",
+      "Domain modeling, Clean Architecture, DDD, CQRS, and service orchestration",
+      "High-throughput APIs (REST/gRPC) with OpenAPI contracts and schema validation",
+      "Concurrency, backpressure, rate limiting, retries/timeouts, and circuit breaker patterns",
+      "Event-driven systems and streaming pipelines (Kafka, RabbitMQ, SQS/SNS)",
+      "Caching strategies with Redis, Saga patterns, and distributed coordination",
+      "ETL/Batch + real-time pipelines using Airflow, Dagster, and custom workers",
+      "Performance tuning (profiling, p95/p99), capacity planning, and load optimization",
+      "Security: OAuth2/OIDC, JWT, mTLS, signed webhooks, and least-privilege access",
     ],
   },
   {
     title: "AI / ML & Data",
     icon: "ai",
     bullets: [
-      "RAG pipelines with LangChain/LangGraph, Pinecone, pgvector",
-      "Model serving & evaluation with Vercel AI SDK, Modal, SageMaker",
-      "Feature stores, embeddings, semantic search",
-      "Data engineering with Kafka, Airflow, dbt",
+      "LLM integration: RAG pipelines, retrieval orchestration, hybrid search, and reranking",
+      "Model serving & inference APIs with function calling, JSON-schema guards, and cost/latency SLOs",
+      "Vector search with pgvector, FAISS, Pinecone, Redis Vector; embeddings and metadata pipelines",
+      "LangChain, LangGraph, LlamaIndex for semantic search, routing, and multi-step workflows",
+      "Feature stores, dataset preprocessing, and data validation for high-quality embeddings",
+      "Data engineering: streaming/ETL with Kafka, Airflow, Dagster; schema-drift detection and lineage",
+      "Classical ML foundations with PyTorch, TensorFlow, and scikit-learn where appropriate",
     ],
   },
   {
-    title: "Cloud & DevOps",
+    title: "Frameworks & Libraries",
+    icon: "library",
+    bullets: [
+      "Python: FastAPI, Django/DRF, Flask, Pydantic, SQLAlchemy, PyTorch, TensorFlow, scikit-learn",
+      "Go: chi, Gin, gRPC, grpc-gateway, sqlc, GORM, ent",
+      "Node.js: NestJS, Express, GraphQL (Apollo)",
+      "Data & Streaming: Kafka, RabbitMQ, Celery, Airflow, Dagster",
+      "Search & Embeddings: Elasticsearch / OpenSearch, Meilisearch, FAISS, Pinecone",
+      "Observability & Monitoring: OpenTelemetry, Prometheus client, Jaeger",
+    ],
+  },
+  {
+    title: "Datastores & Search",
+    icon: "database",
+    bullets: [
+      "Relational DBs: PostgreSQL, MySQL; schema design, sharding/partitioning, replication",
+      "Migrations: Flyway, Liquibase",
+      "NoSQL & Caching: MongoDB, Redis (cache, queues, timeseries)",
+      "Search & Analytics: Elasticsearch / OpenSearch (full-text, aggregations)",
+      "Vector & AI Databases: pgvector, FAISS, Pinecone, Chroma",
+    ],
+  },
+  {
+    title: "DevOps & Cloud",
     icon: "cloud",
     bullets: [
-      "AWS, GCP, Vercel, Fly.io",
-      "Kubernetes, Docker, Terraform, Pulumi",
-      "CI/CD with GitHub Actions, Argo, Temporal workflows",
-      "Security/Compliance: SOC2, secret management, SBOM",
+      "Docker, Kubernetes, Helm",
+      "AWS & GCP (compute, storage, networking)",
+      "IaC: Terraform; GitOps: Argo CD",
+      "CI/CD: GitHub Actions, Jenkins",
+      "Serverless (AWS Lambda), Edge/Vercel/Netlify",
+      "Networking: Ingress, Service Mesh, API Gateways",
     ],
   },
   {
@@ -308,6 +346,8 @@ export const skillCategories = [
     icon: "compass",
     bullets: [
       "Technical strategy, RFCs, ADRs",
+      "Microservices & Modular Monoliths",
+      "Code Review, TDD/Contract Testing",
       "Agile product planning, backlog shaping",
       "Mentoring, pairing, hiring loops",
       "Cross-functional collaboration w/ product & design",
@@ -320,31 +360,31 @@ export const skillHighlights = [
     icon: "stack",
     title: "Backend Engineering",
     description:
-      "Design and ship highly-performant services using Go, Node.js, and TypeScript with clean contracts and robust testing.",
+      "Proficient in building high-performance, multithreaded backend systems using Python, Go, Rust, and Node.js with focus on scalable server-side architecture for AI services.",
   },
   {
     icon: "spark",
     title: "AI/ML Engineering",
     description:
-      "Translate business workflows into LLM-powered assistants, retrieval systems, and automation with observability and evals.",
+      "Expert in designing and deploying AI solutions using PyTorch, TensorFlow, and LangChain for NLP applications, with experience in large language models and semantic search systems.",
   },
   {
     icon: "cloud",
     title: "Cloud & DevOps",
     description:
-      "Scale infrastructure with Kubernetes, Terraform, and automated pipelines to keep deployments safe and frequent.",
-  },
-  {
-    icon: "brush",
-    title: "Frontend Craft",
-    description:
-      "Deliver polished interfaces with React/Next.js, modern visual systems, and pixel-level attention to UX details.",
+      "Experienced in cloud-native architectures using AWS/GCP, containerization with Docker/Kubernetes, and CI/CD automation for secure, scalable software delivery.",
   },
   {
     icon: "data",
     title: "Data & Integrations",
     description:
-      "Build analytics layers, ETL jobs, and integrations across CRMs, billing, and internal services with clear ownership.",
+      "Skilled in designing and optimizing relational and NoSQL databases with emphasis on data integrity, query optimization, and seamless API integration.",
+  },
+  {
+    icon: "brush",
+    title: "Frontend Craft",
+    description:
+      "Expert in architecting responsive web and mobile applications using React.js, Next.js, React Native with advanced state management libraries and pixel-perfect UI/UX design.",
   },
   {
     icon: "compass",
