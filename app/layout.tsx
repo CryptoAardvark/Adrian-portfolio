@@ -15,25 +15,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Adrian Garcia — Software Engineer",
+  title: "Adrian Garcia — AI/ML & Senior Backend Engineer",
   description:
-    "Modern portfolio for a full-stack engineer focused on AI, product, and scalable systems.",
-  metadataBase: new URL("https://example.com"),
+    "Portfolio of Adrian Garcia, a senior backend and AI engineer specializing in Go, Python, distributed systems, high-throughput APIs, cloud infrastructure, and scalable AI/LLM architectures.",
+  metadataBase: new URL("https://adrianport.vercel.app/"),
   openGraph: {
-    title: "Adrian Garcia — Software Engineer",
+    title: "Adrian Garcia — AI/ML & Senior Backend Engineer",
     description:
-      "Showcasing featured projects, expertise, and ways to collaborate on modern digital products.",
-    url: "https://example.com",
-    siteName: "Aardvark Portfolio",
+      "Explore production-grade engineering work across Go/Python microservices, distributed systems, vector search, RAG pipelines, data platforms, and cloud-native infrastructure on AWS, GCP, and Kubernetes.",
+    url: "https://adrianport.vercel.app/",
+    siteName: "Adrian Garcia Portfolio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adrian Garcia — Software Engineer",
+    title: "Adrian Garcia — AI/ML & Senior Backend Engineer",
     description:
-      "Product-focused full-stack engineer building performant apps with React, Next.js, and AI.",
+      "Backend-focused engineer delivering scalable microservices, high-performance APIs, data pipelines, and AI/LLM-integrated platforms.",
   },
 };
+
 
 export default function RootLayout({
   children,
