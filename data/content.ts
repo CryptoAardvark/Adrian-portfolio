@@ -15,28 +15,28 @@ export const heroContent = {
 };
 
 export const metrics = [
-    {
-      value: "8+",
-      label: "Years Experience",
-      detail: "Building scalable SaaS platforms and AI/ML products."
-    },
-    {
-      value: "20+",
-      label: "Products Delivered",
-      detail: "Fintech, analytics, AI agents, and internal tools."
-    },
-    {
-      value: "10+",
-      label: "Production Launches",
-      detail: "From MVPs to enterprise-scale deployments."
-    },
-    {
-      value: "12+",
-      label: "Tech Specialties",
-      detail: "AI/ML, Backend, Full Stack, data engineering, LLMs, DevOps, cloud infrastructure."
-    }
-  ];
-  
+  {
+    value: "8+",
+    label: "Years Experience",
+    detail: "Building scalable SaaS platforms and AI/ML products."
+  },
+  {
+    value: "20+",
+    label: "Products Delivered",
+    detail: "Fintech, analytics, AI agents, and internal tools."
+  },
+  {
+    value: "10+",
+    label: "Production Launches",
+    detail: "From MVPs to enterprise-scale deployments."
+  },
+  {
+    value: "12+",
+    label: "Tech Specialties",
+    detail: "AI/ML, Backend, Full Stack, data engineering, LLMs, DevOps, cloud infrastructure."
+  }
+];
+
 
 export const featuredProjects = [
   {
@@ -105,10 +105,10 @@ export const testimonials = [
 ];
 
 export const contactCta = {
-  heading: "Let’s build something ambitious.",
-  body: "I collaborate with product teams and founders to launch modern experiences across web, AI, and cloud.",
+  heading: "Let's build something exceptional.",
+  body: "I work with founders and engineering teams to architect, develop, and launch scalable platforms, AI systems, and cloud-native applications.",
   buttonLabel: "Get in touch",
-  buttonHref: "mailto:hello@example.com",
+  buttonHref: "mailto:AdrianEG2026@gmail.com",
 };
 
 export const experienceTimeline = [
