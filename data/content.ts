@@ -1,9 +1,9 @@
 export const heroContent = {
-  badge: "Full-Stack Engineer",
-  title: "I build modern products that scale from prototype to production.",
+  badge: "Senior AI/ML & Backend Engineer",
+  title: "I build scalable AI-powered platforms, intelligent agents, and backend systems from prototype to production.",
   subtitle:
-    "Partnering with startups to ship performant web apps, AI experiences, and cloud-native platforms.",
-  highlight: "React · Next.js · Node.js · AI/LLMs · Cloud",
+    "Partnering with startups and teams to ship robust web applications, AI/ML solutions, autonomous agents, and cloud-native infrastructure.",
+  highlight: "Python · Go · FastAPI · Node.js · AI/ML · LLMs · AI Agents · Cloud",
   primaryCta: {
     label: "Explore Portfolio",
     href: "/portfolio",
@@ -15,27 +15,28 @@ export const heroContent = {
 };
 
 export const metrics = [
-  {
-    value: "10+",
-    label: "Years Experience",
-    detail: "Hands-on building SaaS & AI products.",
-  },
-  {
-    value: "25",
-    label: "Products Delivered",
-    detail: "Fintech, analytics, internal tools.",
-  },
-  {
-    value: "30+",
-    label: "Production Launches",
-    detail: "From MVP to hypergrowth scale.",
-  },
-  {
-    value: "12",
-    label: "Tech Specialties",
-    detail: "Frontend, backend, AI/ML, DevOps.",
-  },
-];
+    {
+      value: "8+",
+      label: "Years Experience",
+      detail: "Building scalable SaaS platforms and AI/ML products."
+    },
+    {
+      value: "20+",
+      label: "Products Delivered",
+      detail: "Fintech, analytics, AI agents, and internal tools."
+    },
+    {
+      value: "10+",
+      label: "Production Launches",
+      detail: "From MVPs to enterprise-scale deployments."
+    },
+    {
+      value: "12+",
+      label: "Tech Specialties",
+      detail: "AI/ML, Backend, Full Stack, data engineering, LLMs, DevOps, cloud infrastructure."
+    }
+  ];
+  
 
 export const featuredProjects = [
   {
