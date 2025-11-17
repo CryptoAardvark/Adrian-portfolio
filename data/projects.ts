@@ -1,4 +1,4 @@
-export type ProjectCategory = "Frontend" | "Backend" | "Full-Stack" | "AI";
+export type ProjectCategory = "AI" | "Backend" | "Full-Stack";
 
 export type ProjectMedia =
   | {
@@ -149,110 +149,12 @@ export const projects: Project[] = [
         "Python", "Go", "FastAPI", "React.js", "TypeScript", "WebSockets", "PostgreSQL/TimescaleDB", "Redis", "Docker", "AWS", "TA-Lib",
       ],
       links: {
-        
+
       },
       gallery: [
         {
           src: "image/projects/3/4.jpg",
           alt: "Trading Platform – Real-Time Trade Analysis & Backtesting",
-        },
-      ],
-    },
-  },
-  {
-    id: "relay-os",
-    title: "Relay OS",
-    summary: "Automation platform orchestrating back-office workflows.",
-    description: "Low-code ops toolkit.",
-    category: "Full-Stack",
-    tags: ["Next.js", "tRPC", "PostgreSQL", "Temporal"],
-    media: {
-      type: "video",
-      src: "https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4",
-      poster: `data:image/svg+xml;utf8,${gradientImage}`,
-      alt: "Relay OS flow builder",
-    },
-    details: {
-      longDescription:
-        "Relay OS connects systems via event streams, offering a visual flow builder plus code extensibility. Includes granular permissions, environment promotion, and observability baked-in.",
-      highlights: [
-        "Cut manual ops steps by 70%.",
-        "Modular workflow engine with Temporal.",
-        "End-user previews with replayable sessions.",
-      ],
-      techStack: ["Next.js", "tRPC", "Temporal", "PostgreSQL", "Tailwind"],
-      links: {
-        demo: "https://example.com/relay",
-        repo: "https://github.com/example/relay",
-      },
-      gallery: [
-        {
-          src: `data:image/svg+xml;utf8,${gradientImage}`,
-          alt: "relay os builder",
-        },
-      ],
-    },
-  },
-  {
-    id: "aerial",
-    title: "Aerial Demand Forecasting",
-    summary: "Machine learning forecasts for supply chain teams.",
-    description: "AI-powered forecasting app.",
-    category: "AI",
-    tags: ["Python", "FastAPI", "Next.js", "AWS"],
-    media: {
-      type: "image",
-      src: `data:image/svg+xml;utf8,${gradientImage}`,
-      alt: "Forecasting UI",
-    },
-    details: {
-      longDescription:
-        "Implemented probabilistic forecasting models, scenario planning, and reporting. Productized the stack with API gateways, authentication, and team collaboration features.",
-      highlights: [
-        "Improved inventory planning accuracy by 18%.",
-        "Scenario sandbox with CSV/Excel exports.",
-        "Automated retraining and drift monitoring.",
-      ],
-      techStack: ["Python", "FastAPI", "Next.js", "AWS Lambda", "DynamoDB"],
-      links: {
-        demo: "https://example.com/aerial",
-      },
-      gallery: [
-        {
-          src: `data:image/svg+xml;utf8,${gradientImage}`,
-          alt: "aerial scenario planner",
-        },
-      ],
-    },
-  },
-  {
-    id: "glimmer",
-    title: "Glimmer Marketing Studio",
-    summary: "Frontend kit for marketing teams to ship pages quickly.",
-    description: "Component-driven web builder.",
-    category: "Frontend",
-    tags: ["Next.js", "Tailwind", "MDX", "Vercel"],
-    media: {
-      type: "image",
-      src: `data:image/svg+xml;utf8,${gradientImage}`,
-      alt: "Glimmer components",
-    },
-    details: {
-      longDescription:
-        "Built a block-based site builder with MDX, theme tokens, and optimized publishing pipeline. Provided design system governance plus analytics integrations for marketing teams.",
-      highlights: [
-        "Launched 40+ landing pages with shared components.",
-        "Drag-and-drop editor with real-time preview.",
-        "Localization pipeline for 6 languages.",
-      ],
-      techStack: ["Next.js", "MDX", "Tailwind", "Vercel", "Cloudflare Images"],
-      links: {
-        demo: "https://example.com/glimmer",
-      },
-      gallery: [
-        {
-          src: `data:image/svg+xml;utf8,${gradientImage}`,
-          alt: "glimmer editor view",
         },
       ],
     },
