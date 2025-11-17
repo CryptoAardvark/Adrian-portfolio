@@ -64,7 +64,7 @@ export const projects: Project[] = [
     tags: ["React", "Python", "Go", "FastAPI", "PostgreSQL", "LLMs", "Redis", "Docker", "AWS", "Vercel", "D3.js", "Chart.js"],
     media: {
       type: "video",
-      src: "https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4",
+      src: "image/projects/1/1.mp4",
       poster: `image/projects/1/1.jpg`,
       alt: "AI Data Visualization Platform (MVP)",
     },
@@ -125,33 +125,36 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "vector-hub",
-    title: "Vector Hub",
-    summary: "Semantic search toolkit for product support teams.",
-    description: "LLM-enhanced knowledge discovery.",
-    category: "Backend",
-    tags: ["Go", "gRPC", "Pinecone", "Next.js"],
+    id: "trading",
+    title: "Trading Platform – Real-Time Trade Analysis & Backtesting",
+    summary: "End-to-end Trading platform for systematic trading research: real-time market data ingestion, feature engineering, strategy backtesting, and risk analytics. Includes multi-asset dashboards, PnL/Sharpe tracking, and alerting. Built with event-driven services, low-latency data stores, and an interactive React UI.",
+    description: "Trading Platform – Real-Time Trade Analysis & Backtesting",
+    category: "Full-Stack",
+    tags: ["Python", "Go", "FastAPI", "React.js", "TypeScript", "WebSockets", "PostgreSQL/TimescaleDB", "Redis", "Docker", "AWS", "TA-Lib"],
     media: {
-      type: "image",
-      src: `data:image/svg+xml;utf8,${gradientImage}`,
-      alt: "Vector search UI",
+      type: "video",
+      src: "image/projects/3/3.mp4",
+      poster: `image/projects/3/3.jpg`,
+      alt: "Trading Platform – Real-Time Trade Analysis & Backtesting",
     },
     details: {
       longDescription:
-        "Vector Hub centralizes support content, embeddings, and evaluation pipelines. Live agents can query natural language, orchestrating retrieval-augmented responses with guardrails and audit trails.",
+        "End-to-end Trading platform for systematic trading research: real-time market data ingestion, feature engineering, strategy backtesting, and risk analytics. Includes multi-asset dashboards, PnL/Sharpe tracking, and alerting. Built with event-driven services, low-latency data stores, and an interactive React UI.",
       highlights: [
-        "Reduced ticket resolution time by 40%.",
-        "Hybrid vector + keyword ranking for precision.",
-        "Ops dashboard for model quality metrics.",
+        "Developed a full trading research platform supporting live data streaming, strategy simulation, and quantitative analytics.",
+        "Delivered multi-asset dashboards with real-time PnL, Sharpe ratios, alerts, and risk metrics.",
+        "Architected with event-driven microservices, high-performance storage, and a responsive React interface.",
       ],
-      techStack: ["Go", "Pinecone", "Next.js", "tRPC", "Azure Functions"],
+      techStack: [
+        "Python", "Go", "FastAPI", "React.js", "TypeScript", "WebSockets", "PostgreSQL/TimescaleDB", "Redis", "Docker", "AWS", "TA-Lib",
+      ],
       links: {
-        demo: "https://example.com/vector",
+        
       },
       gallery: [
         {
-          src: `data:image/svg+xml;utf8,${gradientImage}`,
-          alt: "vector hub pipeline",
+          src: "image/projects/3/4.jpg",
+          alt: "Trading Platform – Real-Time Trade Analysis & Backtesting",
         },
       ],
     },
