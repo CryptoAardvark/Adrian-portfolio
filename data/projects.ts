@@ -65,7 +65,7 @@ export const projects: Project[] = [
     media: {
       type: "video",
       src: "image/projects/1/1.mp4",
-      poster: `image/projects/1/1.jpg`,
+      poster: `image/projects/1/2.jpg`,
       alt: "AI Data Visualization Platform (MVP)",
     },
     details: {
@@ -86,7 +86,7 @@ export const projects: Project[] = [
       },
       gallery: [
         {
-          src: "image/projects/1/2.jpg",
+          src: "image/projects/1/1.jpg",
           alt: "AI Data Visualization Platform",
         },
       ],
