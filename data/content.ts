@@ -365,31 +365,31 @@ export const skillHighlights = [
     icon: "stack",
     title: "Backend Engineering",
     description:
-      "Design and ship highly-performant services using Go, Node.js, and TypeScript with clean contracts and robust testing.",
+      "Proficient in building high-performance, multithreaded backend systems using Python, Go, Rust, and Node.js with focus on scalable server-side architecture for AI services.",
   },
   {
     icon: "spark",
     title: "AI/ML Engineering",
     description:
-      "Translate business workflows into LLM-powered assistants, retrieval systems, and automation with observability and evals.",
+      "Expert in designing and deploying AI solutions using PyTorch, TensorFlow, and LangChain for NLP applications, with experience in large language models and semantic search systems.",
   },
   {
     icon: "cloud",
     title: "Cloud & DevOps",
     description:
-      "Scale infrastructure with Kubernetes, Terraform, and automated pipelines to keep deployments safe and frequent.",
-  },
-  {
-    icon: "brush",
-    title: "Frontend Craft",
-    description:
-      "Deliver polished interfaces with React/Next.js, modern visual systems, and pixel-level attention to UX details.",
+      "Experienced in cloud-native architectures using AWS/GCP, containerization with Docker/Kubernetes, and CI/CD automation for secure, scalable software delivery.",
   },
   {
     icon: "data",
     title: "Data & Integrations",
     description:
-      "Build analytics layers, ETL jobs, and integrations across CRMs, billing, and internal services with clear ownership.",
+      "Skilled in designing and optimizing relational and NoSQL databases with emphasis on data integrity, query optimization, and seamless API integration.",
+  },
+  {
+    icon: "brush",
+    title: "Frontend Craft",
+    description:
+      "Expert in architecting responsive web and mobile applications using React.js, Next.js, React Native with advanced state management libraries and pixel-perfect UI/UX design.",
   },
   {
     icon: "compass",
