@@ -1,9 +1,9 @@
 export const heroContent = {
-  badge: "Full-Stack Engineer",
-  title: "I build modern products that scale from prototype to production.",
+  badge: "Senior AI/ML & Backend Engineer",
+  title: "I build scalable AI-powered platforms, intelligent agents, and backend systems from prototype to production.",
   subtitle:
-    "Partnering with startups to ship performant web apps, AI experiences, and cloud-native platforms.",
-  highlight: "React · Next.js · Node.js · AI/LLMs · Cloud",
+    "Partnering with startups and teams to ship robust web applications, AI/ML solutions, autonomous agents, and cloud-native infrastructure.",
+  highlight: "Python · Go · FastAPI · Node.js · AI/ML · LLMs · AI Agents · Cloud",
   primaryCta: {
     label: "Explore Portfolio",
     href: "/portfolio",
@@ -16,53 +16,92 @@ export const heroContent = {
 
 export const metrics = [
   {
-    value: "10+",
+    value: "8+",
     label: "Years Experience",
-    detail: "Hands-on building SaaS & AI products.",
+    detail: "Building scalable SaaS platforms and AI/ML products."
   },
   {
-    value: "25",
+    value: "20+",
     label: "Products Delivered",
-    detail: "Fintech, analytics, internal tools.",
+    detail: "Fintech, analytics, AI agents, and internal tools."
   },
   {
-    value: "30+",
+    value: "10+",
     label: "Production Launches",
-    detail: "From MVP to hypergrowth scale.",
+    detail: "From MVPs to enterprise-scale deployments."
   },
   {
-    value: "12",
+    value: "12+",
     label: "Tech Specialties",
-    detail: "Frontend, backend, AI/ML, DevOps.",
-  },
+    detail: "AI/ML, Backend, Full Stack, data engineering, LLMs, DevOps, cloud infrastructure."
+  }
 ];
+
 
 export const featuredProjects = [
   {
-    id: "atlas",
-    title: "Atlas Command",
-    description: "AI-powered operations console for logistics teams.",
-    outcome: "Reduced manual triage time by 60% through real-time insights.",
-    tags: ["Next.js", "LangChain", "Supabase"],
-    image: "/images/projects/atlas.png",
+    id: "datahaven",
+    title: "DataHaven – AI Data Visualization Platform (MVP)",
+    description:
+      "AI-driven analytics platform enabling real-time, data-driven Q&A across large economic datasets. Built with a Go microservices backend, FastAPI AI services, and a React-based visualization layer using D3.js and Chart.js. Frontend is fully operational; backend and AI pipelines (Pinecone, OpenAI) were migrated toward production architecture.",
+    outcome:
+      "Delivered an interactive AI analytics experience with scalable data pipelines and real-time visual insights.",
+    tags: [
+      "React",
+      "Go",
+      "FastAPI",
+      "Python",
+      "LLMs",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "AWS",
+      "D3.js",
+      "Chart.js"
+    ],
+    image: "/image/projects/1/1.jpg",
     link: "#",
   },
   {
-    id: "pulse",
-    title: "Pulse Metrics",
-    description: "Self-serve analytics toolkit for SaaS founders.",
-    outcome: "Unlocked 99.9% uptime dashboards with streaming events.",
-    tags: ["React", "Node.js", "ClickHouse"],
-    image: "/images/projects/pulse.png",
+    id: "laboro",
+    title: "Laboro – AI-Driven Job Search Platform",
+    description:
+      "Intelligent job search platform leveraging LLMs, NLP pipelines, and OCR to deliver highly accurate job-matching experiences. Improved frontend performance by 30% and implemented advanced SEO optimization to boost organic visibility. Built with a modern, scalable architecture integrating vector search, ML workflows, and cloud-native infrastructure.",
+    outcome:
+      "Increased application performance by 30% and enhanced search accuracy through AI-driven matching and vector retrieval.",
+    tags: [
+      "LLMs",
+      "NLP",
+      "OCR",
+      "Vector Databases",
+      "PostgreSQL",
+      "Redis",
+      "Kubernetes",
+      "MLflow"
+    ],
+    image: "/image/projects/2/2.jpg",
     link: "#",
   },
   {
-    id: "cobalt",
-    title: "Cobalt Automations",
-    description: "Workflow automation platform for fintech ops.",
-    outcome: "Saved ops teams 20+ hours weekly through automation.",
-    tags: ["Next.js", "tRPC", "PostgreSQL"],
-    image: "/images/projects/cobalt.png",
+    id: "trading-platform",
+    title: "Trading Platform – Real-Time Trade Analysis & Backtesting",
+    description:
+      "End-to-end quant trading platform supporting real-time market data ingestion, feature engineering, strategy backtesting, and portfolio risk analytics. Includes multi-asset dashboards, PnL/Sharpe tracking, and alerting for systematic trading workflows. Built with event-driven services, low-latency data stores, and an interactive React UI optimized for quant research.",
+    outcome:
+      "Enabled faster strategy iteration and improved signal reliability with real-time analytics and high-performance backtesting.",
+    tags: [
+      "AI",
+      "ML",
+      "Quant",
+      "Backtesting",
+      "Feature Engineering",
+      "PostgreSQL",
+      "Redis",
+      "Python",
+      "FastAPI",
+      "React"
+    ],
+    image: "/image/projects/3/3.jpg",
     link: "#",
   },
 ];
@@ -85,81 +124,121 @@ export const skillStack = [
 export const testimonials = [
   {
     quote:
-      "Partnering with Aardvark gave us product velocity. He translated vague requirements into polished releases every sprint.",
-    author: "Elena Kapoor",
-    role: "Head of Product, Nimbus",
+      "Adrian joined us as a Backend Engineer (AI, DataHaven.tech) and delivered end-to-end data/ML plumbing: ingestion & ETL, vector search (pgvector/Pinecone), and robust Go/Python APIs on AWS/Kubernetes. He moved fast, wrote clean, observable services, and consistently hit deadlines. We were very satisfied with the quality and impact of his work.",
+    author: "Tomek Nowbilski",
+    role: "CEO/Founder, Harvest LLC",
   },
   {
     quote:
-      "He built our AI-powered workflows end-to-end—architecture, delivery, and observability were world-class.",
-    author: "Marcus Chen",
-    role: "CTO, Harbor Analytics",
+      "I worked with Adrian as an AI/ML + Backend Engineer at Laboro. He productionized models and built reliable Go/Python services—feature pipelines, vector search, and low-latency APIs on Kubernetes—with solid observability. His work measurably improved performance and delivery speed.",
+    author: "Maksim Shatov",
+    role: "Lead Frontend Engineer, Laboro",
   },
   {
     quote:
-      "The collaboration felt like an embedded teammate. Strategic thinking plus the ability to ship quickly.",
-    author: "Priya Raman",
-    role: "Founder, Lumen Health",
+      "Adrian rebuilt the backend architecture powering our ML workflows—high-volume ingestion, feature pipelines, vector search, and low-latency inference endpoints. His engineering rigor improved data quality, reduced latency, and enabled faster experimentation across our AI stack.",
+    author: "Client",
+    role: "CTO, FynCom",
   },
 ];
 
 export const contactCta = {
-  heading: "Let’s build something ambitious.",
-  body: "I collaborate with product teams and founders to launch modern experiences across web, AI, and cloud.",
+  heading: "Let's build something exceptional.",
+  body: "I work with founders and engineering teams to architect, develop, and launch scalable platforms, AI systems, and cloud-native applications.",
   buttonLabel: "Get in touch",
-  buttonHref: "mailto:hello@example.com",
+  buttonHref: "mailto:AdrianEG2026@gmail.com",
 };
 
 export const experienceTimeline = [
   {
-    company: "Harvest LLC",
+    company: "FynCom",
     role: "Lead AI & Backend Engineer",
-    period: "2025 · Contract · Remote",
-    location: "Wilmington, DE",
+    period: "Nov 2023 - Oct 2025 · Part-time · Remote",
+    location: "NY, NY",
     highlights: [
-      "Shipped RAG/semantic search (LangChain + Pinecone) with enterprise guardrails.",
-      "Architected Go + TypeScript backend for streaming ETL, APIs, knowledge graph services.",
-      "Delivered modern React dashboards and data visualization systems for ops teams.",
+      "Designed Python (FastAPI/Flask) microservices with typed REST/GraphQL schemas, rate-limits, idempotency, retries/timeouts, and RBAC.",
+      "Rebuilt the GraphQL data layer with field-level auth, batching, and caching to reduce P95 latency across large catalogs.",
+      "Engineered high-throughput ingestion pipelines (Kafka/SQS + workers) processing 150M+ artifacts with checksum/dedup and schema validation.",
+      "Optimized PostgreSQL/Redis/S3 (Parquet) storage and implemented Elasticsearch/OpenSearch search for enterprise-scale discovery.",
+      "Deployed services on AWS (ECS/EKS) with Docker/Kubernetes/Terraform and modernized CI/CD with image scanning and blue-green/canary rollouts.",
+    ],
+  }
+  ,
+  {
+    company: "Harvest LLC",
+    role: "Lead Backend Engineer",
+    period: "Apr 2025 – Aug 2025 · Contract · Remote",
+    location: "Wimington, DE",
+    highlights: [
+      "Architected Go and Python/FastAPI microservices for real-time querying and ingestion with OAuth2/JWT auth, idempotency, rate limits, retries/timeouts, and correlation IDs.",
+      "Exposed typed REST/gRPC APIs with OpenAPI contracts and added pagination, backpressure, Redis caching, and connection pooling to improve throughput and p95 latency.",
+      "Built scheduled ETL/ELT pipelines over WDI/Eurostat/IMF with normalization, checksum/dedup, schema-drift detection, and reproducible S3/Parquet snapshots.",
+      "Deployed containerized services to AWS (ECS/EKS + ALB) with autoscaling, blue-green/canary rollouts, modern CI/CD, and full OpenTelemetry observability.",
+      "Integrated LangChain + Pinecone for internal RAG/semantic search with hybrid retrieval, reranking, prompt-safety checks, and cost-controlled inference routing.",
     ],
   },
   {
-    company: "Laboro",
-    role: "Senior Full-Stack Engineer",
-    period: "2023 – 2024 · Hybrid",
-    location: "San Francisco, CA",
+    company: "Convoy Inc",
+    role: "Senior AI & GenAI Engineer",
+    period: "Oct 2022 – Nov 2024 · Full-time · Remote",
+    location: "Seattle, WA",
     highlights: [
-      "Led performance-focused frontend revamp, improving FCP by 42%.",
-      "Implemented AI job-matching pipelines with Kubernetes + Supabase.",
-      "Built analytics suite enabling product managers to track hiring funnel health.",
+      "Architected Go and Python/FastAPI microservices for real-time querying and ingestion with OAuth2/JWT, RBAC, idempotency, rate limits, and retries/timeouts.",
+      "Delivered typed REST/gRPC APIs with OpenAPI contracts, adding pagination, backpressure, Redis caching, and connection pooling to improve throughput and p95 latency.",
+      "Built ETL/ELT pipelines over WDI/Eurostat/IMF with normalization, checksum/dedup, schema-drift detection, and reproducible S3/Parquet snapshots.",
+      "Deployed Dockerized services to AWS ECS/EKS with autoscaling, blue-green/canary rollouts, modern CI/CD, and full OpenTelemetry tracing/metrics/logs.",
+      "Integrated LangChain + Pinecone for internal RAG/semantic search with hybrid retrieval, reranking, prompt-safety checks, and cost-optimized inference routing.",
     ],
   },
   {
-    company: "Atlas Cloud",
-    role: "Founding Engineer",
-    period: "2020 – 2023 · Startup",
-    location: "New York, NY",
+    company: "Zillow",
+    role: "AI/ML Engineer",
+    period: "Jun 2020 – Oct 2022 · Full-time · Remote",
+    location: "Seattle, WA",
     highlights: [
-      "Owned architecture across Next.js, tRPC APIs, and multi-region PostgreSQL.",
-      "Launched no-code automation builder used by 200+ internal teams.",
-      "Stood up CI/CD, observability, and security guardrails for rapid releases.",
+      "Designed and operated Go microservices (REST/gRPC) for forex trading platforms—order routing, positions/PnL, risk checks, balances, and audit trails with idempotent handlers, rate limits, and schema-validated I/O.",
+      "Integrated broker/exchange FIX/REST/WebSocket feeds for quotes and executions; added Redis hot-path caching, connection pooling, and backpressure to maintain low p95 latency during volatile market conditions.",
+      "Built ingestion for multi-GB market/analytics feeds with batching, exponential backoff, dedup/schema-drift checks, and lineage tracking stored in PostgreSQL and S3/Parquet snapshots.",
+      "Deployed services on AWS (ECS/EKS, API Gateway/ALB, Lambda, S3, RDS/DynamoDB) using Docker/Kubernetes/Terraform, with blue-green/canary rollouts, CI/CD, and full OpenTelemetry observability.",
+      "Developed a production-grade Rust Solana trading bot with async execution, DEX/aggregator routing, backtesting, and sub-second decision-to-order latency under load.",
+    ],
+  },
+  {
+    company: "Twills",
+    role: "Full Stack Engineer",
+    period: "Nov 2017 – Oct 2019 · Full-time · Remote",
+    location: "NY, NY",
+    highlights: [
+      "Rebuilt and scaled the auto-parts e-commerce backend using Node.js/Express and PHP/Laravel, delivering reliable ordering, accounts, and catalog APIs for 1,000+ daily users.",
+      "Implemented JWT/OAuth2 auth, rate-limiting, idempotent webhooks, request validation, RBAC, and audit trails for secure and predictable operations.",
+      "Developed reusable adapters and webhooks integrating payment, shipping, and inventory providers; standardized partner integrations with OpenAPI contracts.",
+      "Optimized MySQL performance through indexing, query tuning, connection pooling, and read/write segregation; added background workers for imports, reconciliation, and emails to improve responsiveness.",
+      "Migrated on-prem workloads toward cloud-ready Docker-based architecture with CI/CD, centralized logs/metrics, health checks, and disaster-recovery workflows.",
     ],
   },
 ];
 
 export const educationHistory = [
   {
-    school: "Belgrade Shukhov State Tech University",
-    degree: "Master’s — Automotive Engineering Technology",
-    period: "1997 – 2003",
+    school: "University of California, Irvine",
+    degree: "PhD — Materials Science (Computational Science & Data Science)",
+    period: "2014 – 2019",
     summary:
-      "U.S. equivalency approved (Bachelor’s + Master’s). Focus on control systems, computational mechanics, and applied math.",
+      "Research focused on simulation and large-scale data analysis using Python, C/C++, NumPy/Pandas, ML/statistics, and HPC environments (MPI/SLURM).",
   },
   {
-    school: "Stanford Continuing Studies",
-    degree: "Certificate — Product Strategy for Engineers",
-    period: "2022",
+    school: "University of California, Irvine",
+    degree: "MS — Materials Science & Engineering (Scientific Computing)",
+    period: "2012 – 2014",
     summary:
-      "Blended user research, experimentation frameworks, and financial modeling to guide technical decisions.",
+      "Graduate work in scientific computing, numerical methods, data processing, and visualization.",
+  },
+  {
+    school: "University of California, Merced",
+    degree: "BS — Mechanical Engineering (Programming & Modeling)",
+    period: "2008 – 2012",
+    summary:
+      "Focused on computational modeling, simulation, and programming with MATLAB, Python, and C++.",
   },
 ];
 
@@ -187,27 +266,31 @@ export const certifications = [
 ];
 
 export const skillsSummary = {
-  headline: "Product-Focused Full-Stack & AI Engineer",
+  headline: "Senior AI Infrastructure & Distributed Backend Engineer.",
   description:
-    "I help founders and product teams ship reliable, elegant experiences across web, data, and AI. Comfortable operating from architecture through polished UI.",
+    "I design and operate high-performance backend systems, data pipelines, and production AI/LLM infrastructure. Skilled across microservices, cloud platforms, and large-scale ingestion with a deep focus on reliability, performance, and observability.",
   stack:
-    "React · Next.js · TypeScript · Node.js · Go · Python · LangChain · AWS · Supabase · PostgreSQL",
+    "Go • Python • Tensorflow/PyTorch • AWS/Kubernetes • REST/gRPC • RAG & Vector Search (Pinecone/FAISS/pgvector) • LangChain/LangGraph • MLOps (SageMaker/Vertex, MLflow, CI/CD)",
   achievements: [
     {
-      title: "Shipped complex AI workflows",
-      description: "Built RAG assistants, semantic search, and eval loops with safety guardrails.",
+      title: "Production LLM & AI Systems",
+      description:
+        "Designed and deployed real-time LLM inference services, function-calling pipelines, JSON-schema guards, and multi-model routing with cost/latency SLOs.",
     },
     {
-      title: "Scaled cloud platforms",
-      description: "Delivered multi-region infra with Kubernetes, tRPC APIs, and observability baked-in.",
+      title: "Advanced RAG Architectures",
+      description:
+        "Built hybrid retrieval systems (BM25 + embeddings), rerankers, expandable vector stores, semantic search APIs, and automated document chunking/metadata pipelines.",
     },
     {
-      title: "Partnered from 0 → 1",
-      description: "Worked with founders to translate vision into shipping roadmaps and GTM-ready MVPs.",
+      title: "Data & Vector Infrastructure",
+      description:
+        "Implemented ingestion and preprocessing pipelines for embeddings, pgvector/Pinecone indexing, schema-drift detection, dedup, and lineage tracking for auditability.",
     },
     {
-      title: "Champion developer experience",
-      description: "Defined design systems, docs, and testing pipelines that keep teams moving fast.",
+      title: "Distributed Systems for AI",
+      description:
+        "Architected scalable Go/Python microservices with REST/gRPC APIs, concurrency tuning, caching, and backpressure — supporting high-throughput AI workloads.",
     },
   ],
 };
@@ -218,39 +301,73 @@ export const skillCategories = [
     icon: "laptop",
     bullets: [
       "TypeScript / JavaScript (Expert)",
-      "Go + Python for backend & AI systems",
+      "Python (Expert)",
+      "Go/Golang (Expert)",
       "Rust (for perf-sensitive services)",
-      "SQL (PostgreSQL, ClickHouse) & GraphQL",
+      "C++ (Advanced)",
+      "Java (Advanced)",
     ],
   },
   {
     title: "Backend & Distributed",
     icon: "network",
     bullets: [
-      "Event-driven microservices, CQRS, clean architecture",
-      "REST/gRPC, tRPC, GraphQL gateways",
-      "Caching, rate limiting, resiliency patterns",
-      "Observability: OpenTelemetry, Grafana, Datadog",
+      "Domain modeling, Clean Architecture, DDD, CQRS, and service orchestration",
+      "High-throughput APIs (REST/gRPC) with OpenAPI contracts and schema validation",
+      "Concurrency, backpressure, rate limiting, retries/timeouts, and circuit breaker patterns",
+      "Event-driven systems and streaming pipelines (Kafka, RabbitMQ, SQS/SNS)",
+      "Caching strategies with Redis, Saga patterns, and distributed coordination",
+      "ETL/Batch + real-time pipelines using Airflow, Dagster, and custom workers",
+      "Performance tuning (profiling, p95/p99), capacity planning, and load optimization",
+      "Security: OAuth2/OIDC, JWT, mTLS, signed webhooks, and least-privilege access",
     ],
   },
   {
     title: "AI / ML & Data",
     icon: "ai",
     bullets: [
-      "RAG pipelines with LangChain/LangGraph, Pinecone, pgvector",
-      "Model serving & evaluation with Vercel AI SDK, Modal, SageMaker",
-      "Feature stores, embeddings, semantic search",
-      "Data engineering with Kafka, Airflow, dbt",
+      "LLM integration: RAG pipelines, retrieval orchestration, hybrid search, and reranking",
+      "Model serving & inference APIs with function calling, JSON-schema guards, and cost/latency SLOs",
+      "Vector search with pgvector, FAISS, Pinecone, Redis Vector; embeddings and metadata pipelines",
+      "LangChain, LangGraph, LlamaIndex for semantic search, routing, and multi-step workflows",
+      "Feature stores, dataset preprocessing, and data validation for high-quality embeddings",
+      "Data engineering: streaming/ETL with Kafka, Airflow, Dagster; schema-drift detection and lineage",
+      "Classical ML foundations with PyTorch, TensorFlow, and scikit-learn where appropriate",
     ],
   },
   {
-    title: "Cloud & DevOps",
+    title: "Frameworks & Libraries",
+    icon: "library",
+    bullets: [
+      "Python: FastAPI, Django/DRF, Flask, Pydantic, SQLAlchemy, PyTorch, TensorFlow, scikit-learn",
+      "Go: chi, Gin, gRPC, grpc-gateway, sqlc, GORM, ent",
+      "Node.js: NestJS, Express, GraphQL (Apollo)",
+      "Data & Streaming: Kafka, RabbitMQ, Celery, Airflow, Dagster",
+      "Search & Embeddings: Elasticsearch / OpenSearch, Meilisearch, FAISS, Pinecone",
+      "Observability & Monitoring: OpenTelemetry, Prometheus client, Jaeger",
+    ],
+  },
+  {
+    title: "Datastores & Search",
+    icon: "database",
+    bullets: [
+      "Relational DBs: PostgreSQL, MySQL; schema design, sharding/partitioning, replication",
+      "Migrations: Flyway, Liquibase",
+      "NoSQL & Caching: MongoDB, Redis (cache, queues, timeseries)",
+      "Search & Analytics: Elasticsearch / OpenSearch (full-text, aggregations)",
+      "Vector & AI Databases: pgvector, FAISS, Pinecone, Chroma",
+    ],
+  },
+  {
+    title: "DevOps & Cloud",
     icon: "cloud",
     bullets: [
-      "AWS, GCP, Vercel, Fly.io",
-      "Kubernetes, Docker, Terraform, Pulumi",
-      "CI/CD with GitHub Actions, Argo, Temporal workflows",
-      "Security/Compliance: SOC2, secret management, SBOM",
+      "Docker, Kubernetes, Helm",
+      "AWS & GCP (compute, storage, networking)",
+      "IaC: Terraform; GitOps: Argo CD",
+      "CI/CD: GitHub Actions, Jenkins",
+      "Serverless (AWS Lambda), Edge/Vercel/Netlify",
+      "Networking: Ingress, Service Mesh, API Gateways",
     ],
   },
   {
@@ -268,6 +385,8 @@ export const skillCategories = [
     icon: "compass",
     bullets: [
       "Technical strategy, RFCs, ADRs",
+      "Microservices & Modular Monoliths",
+      "Code Review, TDD/Contract Testing",
       "Agile product planning, backlog shaping",
       "Mentoring, pairing, hiring loops",
       "Cross-functional collaboration w/ product & design",
@@ -280,31 +399,31 @@ export const skillHighlights = [
     icon: "stack",
     title: "Backend Engineering",
     description:
-      "Design and ship highly-performant services using Go, Node.js, and TypeScript with clean contracts and robust testing.",
+      "Proficient in building high-performance, multithreaded backend systems using Python, Go, Rust, and Node.js with focus on scalable server-side architecture for AI services.",
   },
   {
     icon: "spark",
     title: "AI/ML Engineering",
     description:
-      "Translate business workflows into LLM-powered assistants, retrieval systems, and automation with observability and evals.",
+      "Expert in designing and deploying AI solutions using PyTorch, TensorFlow, and LangChain for NLP applications, with experience in large language models and semantic search systems.",
   },
   {
     icon: "cloud",
     title: "Cloud & DevOps",
     description:
-      "Scale infrastructure with Kubernetes, Terraform, and automated pipelines to keep deployments safe and frequent.",
-  },
-  {
-    icon: "brush",
-    title: "Frontend Craft",
-    description:
-      "Deliver polished interfaces with React/Next.js, modern visual systems, and pixel-level attention to UX details.",
+      "Experienced in cloud-native architectures using AWS/GCP, containerization with Docker/Kubernetes, and CI/CD automation for secure, scalable software delivery.",
   },
   {
     icon: "data",
     title: "Data & Integrations",
     description:
-      "Build analytics layers, ETL jobs, and integrations across CRMs, billing, and internal services with clear ownership.",
+      "Skilled in designing and optimizing relational and NoSQL databases with emphasis on data integrity, query optimization, and seamless API integration.",
+  },
+  {
+    icon: "brush",
+    title: "Frontend Craft",
+    description:
+      "Expert in architecting responsive web and mobile applications using React.js, Next.js, React Native with advanced state management libraries and pixel-perfect UI/UX design.",
   },
   {
     icon: "compass",
@@ -318,14 +437,14 @@ export const contactInfo = {
   subtitle: "Let's connect and discuss potential opportunities",
   details: [
     { type: "country", label: "Country", value: "United States", icon: "location" },
-    { type: "city", label: "City", value: "Sunnyvale, CA", icon: "location" },
-    { type: "email", label: "Email", value: "m.shatov.sacr@gmail.com", icon: "email", href: "mailto:m.shatov.sacr@gmail.com" },
-    { type: "phone", label: "Phone", value: "+1 (909) 729-1297", icon: "phone", href: "tel:+19097291297" },
+    { type: "city", label: "City", value: "Merced, CA", icon: "location" },
+    { type: "email", label: "Email", value: "AdrianEG2026@gmail.com", icon: "email", href: "mailto:AdrianEG2026@gmail.com" },
+    { type: "phone", label: "Phone", value: "+1 (777) 777-7777", icon: "phone", href: "tel:+17777777777" },
   ],
   socialLinks: [
-    { name: "GitHub", href: "https://github.com", icon: "github" },
-    { name: "LinkedIn", href: "https://linkedin.com", icon: "linkedin" },
-    { name: "Email", href: "mailto:m.shatov.sacr@gmail.com", icon: "email" },
+    { name: "GitHub", href: "https://github.com/AdrianEGraphene", icon: "github" },
+    { name: "LinkedIn", href: "https://linkedin.com/in/adrian-garcia-80718b391/", icon: "linkedin" },
+    { name: "Email", href: "mailto:AdrianEG2026@gmail.com", icon: "email" },
   ],
 };
 

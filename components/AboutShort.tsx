@@ -1,6 +1,6 @@
 const quickMetrics = [
-  { label: "Projects shipped", value: "50+" },
-  { label: "Industries", value: "Fintech · Health · AI" },
+  { label: "Projects shipped", value: "20+" },
+  { label: "Industries", value: "AI/ML · Fintech · Health" },
   { label: "Clients", value: "Startups & scale-ups" },
 ];
 
@@ -10,25 +10,34 @@ export function AboutShort() {
       id="about"
       className="grid gap-10 rounded-[var(--radius-lg)] border border-white/5 bg-white/[0.02] px-8 py-12 md:grid-cols-[0.8fr,1.2fr]"
     >
-      <div className="space-y-5">
-        <div className="h-32 w-32 rounded-full border border-white/10 bg-gradient-to-br from-white/10 to-transparent shadow-[0_30px_90px_rgba(0,0,0,0.4)]" />
+      <div className="space-y-5 flex flex-col items-center md:items-start">
+        {/* Profile Image */}
+        <div className="h-32 w-32 rounded-full border border-white/10 shadow-[0_30px_90px_rgba(0,0,0,0.4)] overflow-hidden">
+          <img
+            src="/image/adrian.jpg" // <-- Replace this with your image path
+            alt="Adrian Garcia"
+            className="h-full w-full object-cover"
+          />
+        </div>
+
         <p className="text-sm uppercase tracking-[0.3em] text-[var(--text-muted)]">
-          About me
+          About Me
         </p>
         <h3 className="text-3xl font-semibold text-white">
-          Product-minded engineer shaping zero-to-one experiences.
+          AI/ML & Backend Engineer delivering scalable, production-ready systems.
         </h3>
       </div>
       <div className="space-y-6">
         <p className="text-base text-[var(--text-muted)]">
-          I’m Aardvark, a full-stack engineer focused on blending product
-          strategy with hands-on execution. I build clean, scalable software for
-          startups in fintech, health, and AI—shipping real-time dashboards,
-          AI-rich workflows, and automation systems that help teams move faster.
+          I’m Adrian Garcia, a backend and AI/ML engineer focused on building
+          high-performance platforms, AI agents, and cloud-native systems. I
+          partner with startups and teams to ship robust SaaS applications,
+          intelligent workflows, and scalable automation that drive measurable impact.
         </p>
         <p className="text-base text-[var(--text-muted)]">
-          I favor thoughtful architecture, systems thinking, and purposeful UI
-          to launch products that feel crafted yet pragmatic.
+          I emphasize thoughtful architecture, system-level thinking, and
+          maintainable code to deliver products that are both reliable and
+          innovative.
         </p>
         <div className="grid gap-4 md:grid-cols-3">
           {quickMetrics.map((item) => (

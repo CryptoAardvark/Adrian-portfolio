@@ -18,8 +18,7 @@ export function BackgroundSection() {
           Experience & Growth
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-sm text-[var(--text-muted)]">
-          Combining hands-on engineering, system architecture, and continuous
-          learning to ship resilient products.
+          Blending AI-driven development with distributed backend architecture to deliver scalable, resilient, and intelligent systems.
         </p>
       </div>
       <div className="grid gap-8 lg:grid-cols-[1.1fr,0.9fr]">

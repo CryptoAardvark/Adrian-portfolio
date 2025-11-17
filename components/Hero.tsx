@@ -57,29 +57,11 @@ export function Hero({ content }: HeroProps) {
                 Focus
               </p>
               <p className="mt-3 text-2xl font-semibold text-white">
-                Product + Engineering
+                AI & Backend Engineering
               </p>
               <p className="mt-2 text-sm text-[var(--text-muted)]">
-                Converging design taste, technical rigor, and fast iteration.
+                Building scalable SaaS platforms, AI agents, and cloud-native systems with technical rigor and rapid iteration.
               </p>
-            </div>
-            <div className="grid grid-cols-2 gap-4 text-left">
-              {["Delivery", "AI Systems", "Cloud"].map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl border border-white/5 bg-white/5 px-4 py-5"
-                >
-                  <p className="text-xs uppercase tracking-[0.3em] text-[var(--text-muted)]">
-                    {item}
-                  </p>
-                  <p className="mt-2 text-lg font-semibold text-white">
-                    Elite
-                  </p>
-                  <span className="mt-1 inline-flex rounded-full bg-white/10 px-3 py-1 text-[10px] uppercase tracking-[0.4em] text-[var(--accent-500)]">
-                    2025
-                  </span>
-                </div>
-              ))}
             </div>
           </div>
         </div>

@@ -151,7 +151,7 @@ export function SkillCategoryGrid({ categories }: SkillCategoryGridProps) {
         </p>
         <h3 className="text-3xl font-semibold text-white">Core skill groups</h3>
       </div>
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-3">
         {categories.map((category, index) => {
           const icon =
             iconVariants[
