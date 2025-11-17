@@ -40,30 +40,68 @@ export const metrics = [
 
 export const featuredProjects = [
   {
-    id: "atlas",
-    title: "Atlas Command",
-    description: "AI-powered operations console for logistics teams.",
-    outcome: "Reduced manual triage time by 60% through real-time insights.",
-    tags: ["Next.js", "LangChain", "Supabase"],
+    id: "datahaven",
+    title: "DataHaven – AI Data Visualization Platform (MVP)",
+    description:
+      "AI-driven analytics platform enabling real-time, data-driven Q&A across large economic datasets. Built with a Go microservices backend, FastAPI AI services, and a React-based visualization layer using D3.js and Chart.js. Frontend is fully operational; backend and AI pipelines (Pinecone, OpenAI) were migrated toward production architecture.",
+    outcome:
+      "Delivered an interactive AI analytics experience with scalable data pipelines and real-time visual insights.",
+    tags: [
+      "React",
+      "Go",
+      "FastAPI",
+      "Python",
+      "LLMs",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "AWS",
+      "D3.js",
+      "Chart.js"
+    ],
     image: "/image/projects/1/1.jpg",
     link: "#",
   },
   {
-    id: "pulse",
-    title: "Pulse Metrics",
-    description: "Self-serve analytics toolkit for SaaS founders.",
-    outcome: "Unlocked 99.9% uptime dashboards with streaming events.",
-    tags: ["React", "Node.js", "ClickHouse"],
+    id: "laboro",
+    title: "Laboro – AI-Driven Job Search Platform",
+    description:
+      "Intelligent job search platform leveraging LLMs, NLP pipelines, and OCR to deliver highly accurate job-matching experiences. Improved frontend performance by 30% and implemented advanced SEO optimization to boost organic visibility. Built with a modern, scalable architecture integrating vector search, ML workflows, and cloud-native infrastructure.",
+    outcome:
+      "Increased application performance by 30% and enhanced search accuracy through AI-driven matching and vector retrieval.",
+    tags: [
+      "LLMs",
+      "NLP",
+      "OCR",
+      "Vector Databases",
+      "PostgreSQL",
+      "Redis",
+      "Kubernetes",
+      "MLflow"
+    ],
     image: "/image/projects/2/2.jpg",
     link: "#",
   },
   {
-    id: "cobalt",
-    title: "Cobalt Automations",
-    description: "Workflow automation platform for fintech ops.",
-    outcome: "Saved ops teams 20+ hours weekly through automation.",
-    tags: ["Next.js", "tRPC", "PostgreSQL"],
-    image: "/image/projects/3/3.jpg",
+    id: "trading-platform",
+    title: "Trading Platform – Real-Time Trade Analysis & Backtesting",
+    description:
+      "End-to-end quant trading platform supporting real-time market data ingestion, feature engineering, strategy backtesting, and portfolio risk analytics. Includes multi-asset dashboards, PnL/Sharpe tracking, and alerting for systematic trading workflows. Built with event-driven services, low-latency data stores, and an interactive React UI optimized for quant research.",
+    outcome:
+      "Enabled faster strategy iteration and improved signal reliability with real-time analytics and high-performance backtesting.",
+    tags: [
+      "AI",
+      "ML",
+      "Quant",
+      "Backtesting",
+      "Feature Engineering",
+      "PostgreSQL",
+      "Redis",
+      "Python",
+      "FastAPI",
+      "React"
+    ],
+    image: "/image/projects/1/5.jpg",
     link: "#",
   },
 ];
