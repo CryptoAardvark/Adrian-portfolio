@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Adrian Garcia — AI/ML & Senior Backend Engineer",
   description:
-    "Portfolio of Adrian Garcia, a senior backend and AI engineer specializing in Go, Python, distributed systems, high-throughput APIs, cloud infrastructure, and scalable AI/LLM architectures.",
+    "Portfolio of Adrian Garcia, a AI/ML engineer and senior backend specializing in Go, Python, distributed systems, high-throughput APIs, cloud infrastructure, and scalable AI/LLM architectures.",
   metadataBase: new URL("https://adrianport.vercel.app/"),
   openGraph: {
     title: "Adrian Garcia — AI/ML & Senior Backend Engineer",
