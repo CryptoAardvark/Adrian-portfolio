@@ -1,6 +1,6 @@
 const quickMetrics = [
-  { label: "Projects shipped", value: "50+" },
-  { label: "Industries", value: "Fintech · Health · AI" },
+  { label: "Projects shipped", value: "20+" },
+  { label: "Industries", value: "AI/ML · Fintech · Health" },
   { label: "Clients", value: "Startups & scale-ups" },
 ];
 
@@ -16,19 +16,20 @@ export function AboutShort() {
           About me
         </p>
         <h3 className="text-3xl font-semibold text-white">
-          Product-minded engineer shaping zero-to-one experiences.
+          AI/ML & Backend Engineer delivering scalable, production-ready systems.
         </h3>
       </div>
       <div className="space-y-6">
         <p className="text-base text-[var(--text-muted)]">
-          I’m Aardvark, a full-stack engineer focused on blending product
-          strategy with hands-on execution. I build clean, scalable software for
-          startups in fintech, health, and AI—shipping real-time dashboards,
-          AI-rich workflows, and automation systems that help teams move faster.
+          I’m Adrian Garcia, a backend and AI/ML engineer focused on building
+          high-performance platforms, AI agents, and cloud-native systems. I
+          partner with startups and teams to ship robust SaaS applications,
+          intelligent workflows, and scalable automation that drive measurable impact.
         </p>
         <p className="text-base text-[var(--text-muted)]">
-          I favor thoughtful architecture, systems thinking, and purposeful UI
-          to launch products that feel crafted yet pragmatic.
+          I emphasize thoughtful architecture, system-level thinking, and
+          maintainable code to deliver products that are both reliable and
+          innovative.
         </p>
         <div className="grid gap-4 md:grid-cols-3">
           {quickMetrics.map((item) => (
