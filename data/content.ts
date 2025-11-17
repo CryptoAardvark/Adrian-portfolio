@@ -181,18 +181,25 @@ export const experienceTimeline = [
 
 export const educationHistory = [
   {
-    school: "Belgrade Shukhov State Tech University",
-    degree: "Master’s — Automotive Engineering Technology",
-    period: "1997 – 2003",
+    school: "University of California, Irvine",
+    degree: "PhD — Materials Science (Computational Science & Data Science)",
+    period: "2014 – 2019",
     summary:
-      "U.S. equivalency approved (Bachelor’s + Master’s). Focus on control systems, computational mechanics, and applied math.",
+      "Research focused on simulation and large-scale data analysis using Python, C/C++, NumPy/Pandas, ML/statistics, and HPC environments (MPI/SLURM).",
   },
   {
-    school: "Stanford Continuing Studies",
-    degree: "Certificate — Product Strategy for Engineers",
-    period: "2022",
+    school: "University of California, Irvine",
+    degree: "MS — Materials Science & Engineering (Scientific Computing)",
+    period: "2012 – 2014",
     summary:
-      "Blended user research, experimentation frameworks, and financial modeling to guide technical decisions.",
+      "Graduate work in scientific computing, numerical methods, data processing, and visualization.",
+  },
+  {
+    school: "University of California, Merced",
+    degree: "BS — Mechanical Engineering (Programming & Modeling)",
+    period: "2008 – 2012",
+    summary:
+      "Focused on computational modeling, simulation, and programming with MATLAB, Python, and C++.",
   },
 ];
 
