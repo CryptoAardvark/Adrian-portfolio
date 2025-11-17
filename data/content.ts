@@ -318,14 +318,14 @@ export const contactInfo = {
   subtitle: "Let's connect and discuss potential opportunities",
   details: [
     { type: "country", label: "Country", value: "United States", icon: "location" },
-    { type: "city", label: "City", value: "Sunnyvale, CA", icon: "location" },
-    { type: "email", label: "Email", value: "m.shatov.sacr@gmail.com", icon: "email", href: "mailto:m.shatov.sacr@gmail.com" },
-    { type: "phone", label: "Phone", value: "+1 (909) 729-1297", icon: "phone", href: "tel:+19097291297" },
+    { type: "city", label: "City", value: "Merced, CA", icon: "location" },
+    { type: "email", label: "Email", value: "AdrianEG2026@gmail.com", icon: "email", href: "mailto:AdrianEG2026@gmail.com" },
+    { type: "phone", label: "Phone", value: "+1 (777) 777-7777", icon: "phone", href: "tel:+17777777777" },
   ],
   socialLinks: [
-    { name: "GitHub", href: "https://github.com", icon: "github" },
-    { name: "LinkedIn", href: "https://linkedin.com", icon: "linkedin" },
-    { name: "Email", href: "mailto:m.shatov.sacr@gmail.com", icon: "email" },
+    { name: "GitHub", href: "https://github.com/AdrianEGraphene", icon: "github" },
+    { name: "LinkedIn", href: "https://linkedin.com/in/adrian-garcia-80718b391/", icon: "linkedin" },
+    { name: "Email", href: "mailto:AdrianEG2026@gmail.com", icon: "email" },
   ],
 };
 
