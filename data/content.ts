@@ -151,6 +151,32 @@ export const experienceTimeline = [
       "Integrated LangChain + Pinecone for internal RAG/semantic search with hybrid retrieval, reranking, prompt-safety checks, and cost-optimized inference routing.",
     ],
   },
+  {
+    company: "Zillow",
+    role: "AI/ML Engineer",
+    period: "Jun 2020 – Oct 2022 · Full-time · Remote",
+    location: "Seattle, WA",
+    highlights: [
+      "Designed and operated Go microservices (REST/gRPC) for forex trading platforms—order routing, positions/PnL, risk checks, balances, and audit trails with idempotent handlers, rate limits, and schema-validated I/O.",
+      "Integrated broker/exchange FIX/REST/WebSocket feeds for quotes and executions; added Redis hot-path caching, connection pooling, and backpressure to maintain low p95 latency during volatile market conditions.",
+      "Built ingestion for multi-GB market/analytics feeds with batching, exponential backoff, dedup/schema-drift checks, and lineage tracking stored in PostgreSQL and S3/Parquet snapshots.",
+      "Deployed services on AWS (ECS/EKS, API Gateway/ALB, Lambda, S3, RDS/DynamoDB) using Docker/Kubernetes/Terraform, with blue-green/canary rollouts, CI/CD, and full OpenTelemetry observability.",
+      "Developed a production-grade Rust Solana trading bot with async execution, DEX/aggregator routing, backtesting, and sub-second decision-to-order latency under load.",
+    ],
+  },
+  {
+    company: "Twills",
+    role: "Full Stack Engineer",
+    period: "Nov 2017 – Oct 2019 · Full-time · Remote",
+    location: "NY, NY",
+    highlights: [
+      "Rebuilt and scaled the auto-parts e-commerce backend using Node.js/Express and PHP/Laravel, delivering reliable ordering, accounts, and catalog APIs for 1,000+ daily users.",
+      "Implemented JWT/OAuth2 auth, rate-limiting, idempotent webhooks, request validation, RBAC, and audit trails for secure and predictable operations.",
+      "Developed reusable adapters and webhooks integrating payment, shipping, and inventory providers; standardized partner integrations with OpenAPI contracts.",
+      "Optimized MySQL performance through indexing, query tuning, connection pooling, and read/write segregation; added background workers for imports, reconciliation, and emails to improve responsiveness.",
+      "Migrated on-prem workloads toward cloud-ready Docker-based architecture with CI/CD, centralized logs/metrics, health checks, and disaster-recovery workflows.",
+    ],
+  },
 ];
 
 export const educationHistory = [
