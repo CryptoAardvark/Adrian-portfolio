@@ -28,7 +28,7 @@ export function Header() {
               Adrian Garcia
             </p>
             <p className="text-base font-semibold text-white">
-              Product-Focused Engineer
+              Software Engineer
             </p>
           </div>
         </div>
