@@ -227,27 +227,36 @@ export const certifications = [
 ];
 
 export const skillsSummary = {
-  headline: "Product-Focused Full-Stack & AI Engineer",
+  headline: "Senior AI Infrastructure & Distributed Backend Engineer.",
   description:
-    "I help founders and product teams ship reliable, elegant experiences across web, data, and AI. Comfortable operating from architecture through polished UI.",
+    "I design and operate high-performance backend systems, data pipelines, and production AI/LLM infrastructure. Skilled across microservices, cloud platforms, and large-scale ingestion with a deep focus on reliability, performance, and observability.",
   stack:
-    "React · Next.js · TypeScript · Node.js · Go · Python · LangChain · AWS · Supabase · PostgreSQL",
+    "Go • Python • Tensorflow/PyTorch • AWS/Kubernetes • REST/gRPC • RAG & Vector Search (Pinecone/FAISS/pgvector) • LangChain/LangGraph • MLOps (SageMaker/Vertex, MLflow, CI/CD)",
   achievements: [
     {
-      title: "Shipped complex AI workflows",
-      description: "Built RAG assistants, semantic search, and eval loops with safety guardrails.",
+      title: "Production LLM & AI Systems",
+      description:
+        "Designed and deployed real-time LLM inference services, function-calling pipelines, JSON-schema guards, and multi-model routing with cost/latency SLOs.",
     },
     {
-      title: "Scaled cloud platforms",
-      description: "Delivered multi-region infra with Kubernetes, tRPC APIs, and observability baked-in.",
+      title: "Advanced RAG Architectures",
+      description:
+        "Built hybrid retrieval systems (BM25 + embeddings), rerankers, expandable vector stores, semantic search APIs, and automated document chunking/metadata pipelines.",
     },
     {
-      title: "Partnered from 0 → 1",
-      description: "Worked with founders to translate vision into shipping roadmaps and GTM-ready MVPs.",
+      title: "Data & Vector Infrastructure",
+      description:
+        "Implemented ingestion and preprocessing pipelines for embeddings, pgvector/Pinecone indexing, schema-drift detection, dedup, and lineage tracking for auditability.",
     },
     {
-      title: "Champion developer experience",
-      description: "Defined design systems, docs, and testing pipelines that keep teams moving fast.",
+      title: "AI Safety, Evaluation & Monitoring",
+      description:
+        "Added prompt-injection defenses, role/intent validation, guardrails, redaction, and continuous eval loops (Ragas/TruLens) with telemetry for drift, cost, and hallucinations.",
+    },
+    {
+      title: "Distributed Systems for AI",
+      description:
+        "Architected scalable Go/Python microservices with REST/gRPC APIs, concurrency tuning, caching, and backpressure — supporting high-throughput AI workloads.",
     },
   ],
 };
