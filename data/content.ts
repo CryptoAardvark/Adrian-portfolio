@@ -267,9 +267,11 @@ export const skillCategories = [
     icon: "laptop",
     bullets: [
       "TypeScript / JavaScript (Expert)",
-      "Go + Python for backend & AI systems",
+      "Python (Expert)",
+      "Go/Golang (Expert)",
       "Rust (for perf-sensitive services)",
-      "SQL (PostgreSQL, ClickHouse) & GraphQL",
+      "C++ (Advanced)",
+      "Java (Advanced)",
     ],
   },
   {
