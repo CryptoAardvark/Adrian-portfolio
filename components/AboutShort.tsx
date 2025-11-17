@@ -10,10 +10,18 @@ export function AboutShort() {
       id="about"
       className="grid gap-10 rounded-[var(--radius-lg)] border border-white/5 bg-white/[0.02] px-8 py-12 md:grid-cols-[0.8fr,1.2fr]"
     >
-      <div className="space-y-5">
-        <div className="h-32 w-32 rounded-full border border-white/10 bg-gradient-to-br from-white/10 to-transparent shadow-[0_30px_90px_rgba(0,0,0,0.4)]" />
+      <div className="space-y-5 flex flex-col items-center md:items-start">
+        {/* Profile Image */}
+        <div className="h-32 w-32 rounded-full border border-white/10 shadow-[0_30px_90px_rgba(0,0,0,0.4)] overflow-hidden">
+          <img
+            src="/image/adrian.jpg" // <-- Replace this with your image path
+            alt="Adrian Garcia"
+            className="h-full w-full object-cover"
+          />
+        </div>
+
         <p className="text-sm uppercase tracking-[0.3em] text-[var(--text-muted)]">
-          About me
+          About Me
         </p>
         <h3 className="text-3xl font-semibold text-white">
           AI/ML & Backend Engineer delivering scalable, production-ready systems.
