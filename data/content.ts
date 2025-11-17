@@ -112,16 +112,19 @@ export const contactCta = {
 
 export const experienceTimeline = [
   {
-    company: "Harvest LLC",
+    company: "FynCom",
     role: "Lead AI & Backend Engineer",
-    period: "2025 · Contract · Remote",
-    location: "Wilmington, DE",
+    period: "Nov 2023 - Oct 2025 · Part-time · Remote",
+    location: "NY, NY, US",
     highlights: [
-      "Shipped RAG/semantic search (LangChain + Pinecone) with enterprise guardrails.",
-      "Architected Go + TypeScript backend for streaming ETL, APIs, knowledge graph services.",
-      "Delivered modern React dashboards and data visualization systems for ops teams.",
+      "Designed Python (FastAPI/Flask) microservices with typed REST/GraphQL schemas, rate-limits, idempotency, retries/timeouts, and RBAC.",
+      "Rebuilt the GraphQL data layer with field-level auth, batching, and caching to reduce P95 latency across large catalogs.",
+      "Engineered high-throughput ingestion pipelines (Kafka/SQS + workers) processing 150M+ artifacts with checksum/dedup and schema validation.",
+      "Optimized PostgreSQL/Redis/S3 (Parquet) storage and implemented Elasticsearch/OpenSearch search for enterprise-scale discovery.",
+      "Deployed services on AWS (ECS/EKS) with Docker/Kubernetes/Terraform and modernized CI/CD with image scanning and blue-green/canary rollouts.",
     ],
-  },
+  }
+  ,
   {
     company: "Laboro",
     role: "Senior Full-Stack Engineer",
