@@ -115,7 +115,7 @@ export const experienceTimeline = [
     company: "FynCom",
     role: "Lead AI & Backend Engineer",
     period: "Nov 2023 - Oct 2025 · Part-time · Remote",
-    location: "NY, NY, US",
+    location: "NY, NY",
     highlights: [
       "Designed Python (FastAPI/Flask) microservices with typed REST/GraphQL schemas, rate-limits, idempotency, retries/timeouts, and RBAC.",
       "Rebuilt the GraphQL data layer with field-level auth, batching, and caching to reduce P95 latency across large catalogs.",
@@ -139,14 +139,16 @@ export const experienceTimeline = [
     ],
   },
   {
-    company: "Atlas Cloud",
-    role: "Founding Engineer",
-    period: "2020 – 2023 · Startup",
-    location: "New York, NY",
+    company: "Convoy Inc",
+    role: "Senior AI & GenAI Engineer",
+    period: "Oct 2022 – Nov 2024 · Full-time · Remote",
+    location: "Seattle, WA",
     highlights: [
-      "Owned architecture across Next.js, tRPC APIs, and multi-region PostgreSQL.",
-      "Launched no-code automation builder used by 200+ internal teams.",
-      "Stood up CI/CD, observability, and security guardrails for rapid releases.",
+      "Architected Go and Python/FastAPI microservices for real-time querying and ingestion with OAuth2/JWT, RBAC, idempotency, rate limits, and retries/timeouts.",
+      "Delivered typed REST/gRPC APIs with OpenAPI contracts, adding pagination, backpressure, Redis caching, and connection pooling to improve throughput and p95 latency.",
+      "Built ETL/ELT pipelines over WDI/Eurostat/IMF with normalization, checksum/dedup, schema-drift detection, and reproducible S3/Parquet snapshots.",
+      "Deployed Dockerized services to AWS ECS/EKS with autoscaling, blue-green/canary rollouts, modern CI/CD, and full OpenTelemetry tracing/metrics/logs.",
+      "Integrated LangChain + Pinecone for internal RAG/semantic search with hybrid retrieval, reranking, prompt-safety checks, and cost-optimized inference routing.",
     ],
   },
 ];
