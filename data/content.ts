@@ -59,7 +59,7 @@ export const featuredProjects = [
       "D3.js",
       "Chart.js"
     ],
-    image: "/image/projects/1/2.jpg",
+    image: "/image/projects/2/2.jpg",
     link: "#",
   },
   {
