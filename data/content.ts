@@ -15,27 +15,28 @@ export const heroContent = {
 };
 
 export const metrics = [
-  {
-    value: "10+",
-    label: "Years Experience",
-    detail: "Hands-on building SaaS & AI products.",
-  },
-  {
-    value: "25",
-    label: "Products Delivered",
-    detail: "Fintech, analytics, internal tools.",
-  },
-  {
-    value: "30+",
-    label: "Production Launches",
-    detail: "From MVP to hypergrowth scale.",
-  },
-  {
-    value: "12",
-    label: "Tech Specialties",
-    detail: "Frontend, backend, AI/ML, DevOps.",
-  },
-];
+    {
+      value: "8+",
+      label: "Years Experience",
+      detail: "Building scalable SaaS platforms and AI/ML products."
+    },
+    {
+      value: "20+",
+      label: "Products Delivered",
+      detail: "Fintech, analytics, AI agents, and internal tools."
+    },
+    {
+      value: "10+",
+      label: "Production Launches",
+      detail: "From MVPs to enterprise-scale deployments."
+    },
+    {
+      value: "12+",
+      label: "Tech Specialties",
+      detail: "AI/ML, Backend, Full Stack, data engineering, LLMs, DevOps, cloud infrastructure."
+    }
+  ];
+  
 
 export const featuredProjects = [
   {
