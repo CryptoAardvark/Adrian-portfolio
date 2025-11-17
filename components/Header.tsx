@@ -21,11 +21,11 @@ export function Header() {
       <div className="page-shell flex flex-col gap-4 py-4 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-sm font-semibold uppercase tracking-widest text-[var(--accent-500)]">
-            AV
+            AG
           </div>
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-[var(--text-muted)]">
-              Aardvark
+              Adrian Garcia
             </p>
             <p className="text-base font-semibold text-white">
               Product-Focused Engineer
@@ -49,8 +49,8 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-3">
           <div className="hidden flex-col text-right text-xs text-[var(--text-muted)] sm:flex">
-            <span>hello@example.com</span>
-            <span>+1 (555) 010-2266</span>
+            <span>AdrianEG2026@gmail.com</span>
+            <span>+1 (777) 777-7777</span>
           </div>
           <Link
             href="/contact"
