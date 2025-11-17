@@ -3,8 +3,6 @@ import { Hero } from "@/components/Hero";
 import { MetricsStrip } from "@/components/MetricsStrip";
 import { ProjectsPreview } from "@/components/ProjectsPreview";
 import { AboutShort } from "@/components/AboutShort";
-import { SkillsSection } from "@/components/skills/SkillsSection";
-import { BackgroundSection } from "@/components/background/BackgroundSection";
 import { Testimonials } from "@/components/Testimonials";
 import { ContactCTA } from "@/components/ContactCTA";
 import { Footer } from "@/components/Footer";
@@ -25,8 +23,6 @@ export default function Home() {
         <Hero content={heroContent} />
         <MetricsStrip metrics={metrics} />
         <ProjectsPreview projects={featuredProjects} />
-        {/* <SkillsSection /> */}
-        {/* <BackgroundSection /> */}
         <Testimonials testimonials={testimonials} />
         <ContactCTA {...contactCta} />
       </main>
