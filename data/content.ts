@@ -126,14 +126,16 @@ export const experienceTimeline = [
   }
   ,
   {
-    company: "Laboro",
-    role: "Senior Full-Stack Engineer",
-    period: "2023 – 2024 · Hybrid",
-    location: "San Francisco, CA",
+    company: "Harvest LLC",
+    role: "Lead Backend Engineer",
+    period: "Apr 2025 – Aug 2025 · Contract · Remote",
+    location: "Wimington, DE",
     highlights: [
-      "Led performance-focused frontend revamp, improving FCP by 42%.",
-      "Implemented AI job-matching pipelines with Kubernetes + Supabase.",
-      "Built analytics suite enabling product managers to track hiring funnel health.",
+      "Architected Go and Python/FastAPI microservices for real-time querying and ingestion with OAuth2/JWT auth, idempotency, rate limits, retries/timeouts, and correlation IDs.",
+      "Exposed typed REST/gRPC APIs with OpenAPI contracts and added pagination, backpressure, Redis caching, and connection pooling to improve throughput and p95 latency.",
+      "Built scheduled ETL/ELT pipelines over WDI/Eurostat/IMF with normalization, checksum/dedup, schema-drift detection, and reproducible S3/Parquet snapshots.",
+      "Deployed containerized services to AWS (ECS/EKS + ALB) with autoscaling, blue-green/canary rollouts, modern CI/CD, and full OpenTelemetry observability.",
+      "Integrated LangChain + Pinecone for internal RAG/semantic search with hybrid retrieval, reranking, prompt-safety checks, and cost-controlled inference routing.",
     ],
   },
   {
