@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aardvark — Software Engineer Portfolio",
+  title: "Adrian Garcia — Software Engineer",
   description:
     "Modern portfolio for a full-stack engineer focused on AI, product, and scalable systems.",
   metadataBase: new URL("https://example.com"),
   openGraph: {
-    title: "Aardvark — Software Engineer Portfolio",
+    title: "Adrian Garcia — Software Engineer",
     description:
       "Showcasing featured projects, expertise, and ways to collaborate on modern digital products.",
     url: "https://example.com",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aardvark — Software Engineer Portfolio",
+    title: "Adrian Garcia — Software Engineer",
     description:
       "Product-focused full-stack engineer building performant apps with React, Next.js, and AI.",
   },
