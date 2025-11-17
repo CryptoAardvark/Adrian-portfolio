@@ -21,12 +21,12 @@ export default function Home() {
     <div className="min-h-screen bg-[var(--base-950)]">
       <Header />
       <main className="page-shell space-y-16 py-16 md:py-24">
+        <AboutShort />
         <Hero content={heroContent} />
         <MetricsStrip metrics={metrics} />
         <ProjectsPreview projects={featuredProjects} />
-        <AboutShort />
-        <SkillsSection />
-        <BackgroundSection />
+        {/* <SkillsSection /> */}
+        {/* <BackgroundSection /> */}
         <Testimonials testimonials={testimonials} />
         <ContactCTA {...contactCta} />
       </main>
