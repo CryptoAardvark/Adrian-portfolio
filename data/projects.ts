@@ -83,7 +83,6 @@ export const projects: Project[] = [
       ],
       links: {
         demo: "https://datahaven.tech",
-        repo: "https://github.com/",
       },
       gallery: [
         {
@@ -94,33 +93,33 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "quantum-insights",
-    title: "Quantum Insights",
-    summary: "Executive dashboards powering live SaaS KPIs.",
-    description: "Multi-tenant analytics platform.",
-    category: "Full-Stack",
-    tags: ["React", "Node.js", "ClickHouse", "Tailwind"],
+    id: "laboro",
+    title: "AI-Driven Job Search Platform",
+    summary: "Intelligent job search platform leveraging LLMs, NLP pipelines, and OCR to deliver highly accurate job-matching experiences. Improved frontend performance by 30% and implemented advanced SEO optimization to boost organic visibility. Built with a modern, scalable architecture integrating vector search, ML workflows, and cloud-native infrastructure.",
+    description: "AI-Driven Job Search Platform",
+    category: "AI",
+    tags: ["LLMs", "NLP", "OCR", "Vector Databases", "PostgreSQL", "Redis", "Kubernetes", "MLflow"],
     media: {
       type: "image",
-      src: `data:image/svg+xml;utf8,${gradientImage}`,
-      alt: "Analytics UI",
+      src: "image/projects/2/2.jpg",
+      alt: "AI-Driven Job Search Platform",
     },
     details: {
       longDescription:
-        "Built real-time KPI monitoring for SaaS companies with data ingestion, columnar storage, and adaptive query caching. Delivered responsive dashboards, alerting, and workspace collaboration features.",
+        "Intelligent job search platform leveraging LLMs, NLP pipelines, and OCR to deliver highly accurate job-matching experiences. Improved frontend performance by 30% and implemented advanced SEO optimization to boost organic visibility. Built with a modern, scalable architecture integrating vector search, ML workflows, and cloud-native infrastructure.",
       highlights: [
-        "Processed 2B events/day with <2s query latency.",
-        "Role-based views and white-label theming.",
-        "Live anomaly detection with notifications.",
+        "Built an intelligent job-search platform using LLMs, NLP pipelines, and OCR for highly accurate job–candidate matching.",
+        "Improved frontend performance by 30% and delivered advanced SEO optimizations to increase organic traffic.",
+        "Designed a modern, scalable architecture with vector search, ML workflows, and cloud-native infrastructure.",
       ],
-      techStack: ["React 19", "Node.js", "ClickHouse", "Redis", "Tailwind"],
+      techStack: ["LLMs", "NLP", "OCR", "Vector Databases", "PostgreSQL", "Redis", "Kubernetes", "MLflow"],
       links: {
-        demo: "https://example.com/quantum",
+        demo: "https://laboro.co/",
       },
       gallery: [
         {
-          src: `data:image/svg+xml;utf8,${gradientImage}`,
-          alt: "quantum insight charts",
+          src: `image/projects/2/4.jpg`,
+          alt: "AI-Driven Job Search Platform",
         },
       ],
     },
