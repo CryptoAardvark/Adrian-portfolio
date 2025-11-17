@@ -1,9 +1,9 @@
 export const heroContent = {
-  badge: "Full-Stack Engineer",
-  title: "I build modern products that scale from prototype to production.",
+  badge: "Senior AI/ML & Backend Engineer",
+  title: "I build scalable AI-powered platforms, intelligent agents, and backend systems from prototype to production.",
   subtitle:
-    "Partnering with startups to ship performant web apps, AI experiences, and cloud-native platforms.",
-  highlight: "React · Next.js · Node.js · AI/LLMs · Cloud",
+    "Partnering with startups and teams to ship robust web applications, AI/ML solutions, autonomous agents, and cloud-native infrastructure.",
+  highlight: "Python · Go · FastAPI · Node.js · AI/ML · LLMs · AI Agents · Cloud",
   primaryCta: {
     label: "Explore Portfolio",
     href: "/portfolio",
