@@ -112,54 +112,94 @@ export const contactCta = {
 
 export const experienceTimeline = [
   {
-    company: "Harvest LLC",
+    company: "FynCom",
     role: "Lead AI & Backend Engineer",
-    period: "2025 · Contract · Remote",
-    location: "Wilmington, DE",
+    period: "Nov 2023 - Oct 2025 · Part-time · Remote",
+    location: "NY, NY",
     highlights: [
-      "Shipped RAG/semantic search (LangChain + Pinecone) with enterprise guardrails.",
-      "Architected Go + TypeScript backend for streaming ETL, APIs, knowledge graph services.",
-      "Delivered modern React dashboards and data visualization systems for ops teams.",
+      "Designed Python (FastAPI/Flask) microservices with typed REST/GraphQL schemas, rate-limits, idempotency, retries/timeouts, and RBAC.",
+      "Rebuilt the GraphQL data layer with field-level auth, batching, and caching to reduce P95 latency across large catalogs.",
+      "Engineered high-throughput ingestion pipelines (Kafka/SQS + workers) processing 150M+ artifacts with checksum/dedup and schema validation.",
+      "Optimized PostgreSQL/Redis/S3 (Parquet) storage and implemented Elasticsearch/OpenSearch search for enterprise-scale discovery.",
+      "Deployed services on AWS (ECS/EKS) with Docker/Kubernetes/Terraform and modernized CI/CD with image scanning and blue-green/canary rollouts.",
+    ],
+  }
+  ,
+  {
+    company: "Harvest LLC",
+    role: "Lead Backend Engineer",
+    period: "Apr 2025 – Aug 2025 · Contract · Remote",
+    location: "Wimington, DE",
+    highlights: [
+      "Architected Go and Python/FastAPI microservices for real-time querying and ingestion with OAuth2/JWT auth, idempotency, rate limits, retries/timeouts, and correlation IDs.",
+      "Exposed typed REST/gRPC APIs with OpenAPI contracts and added pagination, backpressure, Redis caching, and connection pooling to improve throughput and p95 latency.",
+      "Built scheduled ETL/ELT pipelines over WDI/Eurostat/IMF with normalization, checksum/dedup, schema-drift detection, and reproducible S3/Parquet snapshots.",
+      "Deployed containerized services to AWS (ECS/EKS + ALB) with autoscaling, blue-green/canary rollouts, modern CI/CD, and full OpenTelemetry observability.",
+      "Integrated LangChain + Pinecone for internal RAG/semantic search with hybrid retrieval, reranking, prompt-safety checks, and cost-controlled inference routing.",
     ],
   },
   {
-    company: "Laboro",
-    role: "Senior Full-Stack Engineer",
-    period: "2023 – 2024 · Hybrid",
-    location: "San Francisco, CA",
+    company: "Convoy Inc",
+    role: "Senior AI & GenAI Engineer",
+    period: "Oct 2022 – Nov 2024 · Full-time · Remote",
+    location: "Seattle, WA",
     highlights: [
-      "Led performance-focused frontend revamp, improving FCP by 42%.",
-      "Implemented AI job-matching pipelines with Kubernetes + Supabase.",
-      "Built analytics suite enabling product managers to track hiring funnel health.",
+      "Architected Go and Python/FastAPI microservices for real-time querying and ingestion with OAuth2/JWT, RBAC, idempotency, rate limits, and retries/timeouts.",
+      "Delivered typed REST/gRPC APIs with OpenAPI contracts, adding pagination, backpressure, Redis caching, and connection pooling to improve throughput and p95 latency.",
+      "Built ETL/ELT pipelines over WDI/Eurostat/IMF with normalization, checksum/dedup, schema-drift detection, and reproducible S3/Parquet snapshots.",
+      "Deployed Dockerized services to AWS ECS/EKS with autoscaling, blue-green/canary rollouts, modern CI/CD, and full OpenTelemetry tracing/metrics/logs.",
+      "Integrated LangChain + Pinecone for internal RAG/semantic search with hybrid retrieval, reranking, prompt-safety checks, and cost-optimized inference routing.",
     ],
   },
   {
-    company: "Atlas Cloud",
-    role: "Founding Engineer",
-    period: "2020 – 2023 · Startup",
-    location: "New York, NY",
+    company: "Zillow",
+    role: "AI/ML Engineer",
+    period: "Jun 2020 – Oct 2022 · Full-time · Remote",
+    location: "Seattle, WA",
     highlights: [
-      "Owned architecture across Next.js, tRPC APIs, and multi-region PostgreSQL.",
-      "Launched no-code automation builder used by 200+ internal teams.",
-      "Stood up CI/CD, observability, and security guardrails for rapid releases.",
+      "Designed and operated Go microservices (REST/gRPC) for forex trading platforms—order routing, positions/PnL, risk checks, balances, and audit trails with idempotent handlers, rate limits, and schema-validated I/O.",
+      "Integrated broker/exchange FIX/REST/WebSocket feeds for quotes and executions; added Redis hot-path caching, connection pooling, and backpressure to maintain low p95 latency during volatile market conditions.",
+      "Built ingestion for multi-GB market/analytics feeds with batching, exponential backoff, dedup/schema-drift checks, and lineage tracking stored in PostgreSQL and S3/Parquet snapshots.",
+      "Deployed services on AWS (ECS/EKS, API Gateway/ALB, Lambda, S3, RDS/DynamoDB) using Docker/Kubernetes/Terraform, with blue-green/canary rollouts, CI/CD, and full OpenTelemetry observability.",
+      "Developed a production-grade Rust Solana trading bot with async execution, DEX/aggregator routing, backtesting, and sub-second decision-to-order latency under load.",
+    ],
+  },
+  {
+    company: "Twills",
+    role: "Full Stack Engineer",
+    period: "Nov 2017 – Oct 2019 · Full-time · Remote",
+    location: "NY, NY",
+    highlights: [
+      "Rebuilt and scaled the auto-parts e-commerce backend using Node.js/Express and PHP/Laravel, delivering reliable ordering, accounts, and catalog APIs for 1,000+ daily users.",
+      "Implemented JWT/OAuth2 auth, rate-limiting, idempotent webhooks, request validation, RBAC, and audit trails for secure and predictable operations.",
+      "Developed reusable adapters and webhooks integrating payment, shipping, and inventory providers; standardized partner integrations with OpenAPI contracts.",
+      "Optimized MySQL performance through indexing, query tuning, connection pooling, and read/write segregation; added background workers for imports, reconciliation, and emails to improve responsiveness.",
+      "Migrated on-prem workloads toward cloud-ready Docker-based architecture with CI/CD, centralized logs/metrics, health checks, and disaster-recovery workflows.",
     ],
   },
 ];
 
 export const educationHistory = [
   {
-    school: "Belgrade Shukhov State Tech University",
-    degree: "Master’s — Automotive Engineering Technology",
-    period: "1997 – 2003",
+    school: "University of California, Irvine",
+    degree: "PhD — Materials Science (Computational Science & Data Science)",
+    period: "2014 – 2019",
     summary:
-      "U.S. equivalency approved (Bachelor’s + Master’s). Focus on control systems, computational mechanics, and applied math.",
+      "Research focused on simulation and large-scale data analysis using Python, C/C++, NumPy/Pandas, ML/statistics, and HPC environments (MPI/SLURM).",
   },
   {
-    school: "Stanford Continuing Studies",
-    degree: "Certificate — Product Strategy for Engineers",
-    period: "2022",
+    school: "University of California, Irvine",
+    degree: "MS — Materials Science & Engineering (Scientific Computing)",
+    period: "2012 – 2014",
     summary:
-      "Blended user research, experimentation frameworks, and financial modeling to guide technical decisions.",
+      "Graduate work in scientific computing, numerical methods, data processing, and visualization.",
+  },
+  {
+    school: "University of California, Merced",
+    degree: "BS — Mechanical Engineering (Programming & Modeling)",
+    period: "2008 – 2012",
+    summary:
+      "Focused on computational modeling, simulation, and programming with MATLAB, Python, and C++.",
   },
 ];
 
