@@ -86,21 +86,21 @@ export const skillStack = [
 export const testimonials = [
   {
     quote:
-      "Partnering with Aardvark gave us product velocity. He translated vague requirements into polished releases every sprint.",
-    author: "Elena Kapoor",
-    role: "Head of Product, Nimbus",
+      "Adrian joined us as a Backend Engineer (AI, DataHaven.tech) and delivered end-to-end data/ML plumbing: ingestion & ETL, vector search (pgvector/Pinecone), and robust Go/Python APIs on AWS/Kubernetes. He moved fast, wrote clean, observable services, and consistently hit deadlines. We were very satisfied with the quality and impact of his work.",
+    author: "Tomek Nowbilski",
+    role: "CEO/Founder, Harvest LLC",
   },
   {
     quote:
-      "He built our AI-powered workflows end-to-end—architecture, delivery, and observability were world-class.",
-    author: "Marcus Chen",
-    role: "CTO, Harbor Analytics",
+      "I worked with Adrian as an AI/ML + Backend Engineer at Laboro. He productionized models and built reliable Go/Python services—feature pipelines, vector search, and low-latency APIs on Kubernetes—with solid observability. His work measurably improved performance and delivery speed.",
+    author: "Maksim Shatov",
+    role: "Lead Frontend Engineer, Laboro",
   },
   {
     quote:
-      "The collaboration felt like an embedded teammate. Strategic thinking plus the ability to ship quickly.",
-    author: "Priya Raman",
-    role: "Founder, Lumen Health",
+      "Adrian rebuilt the backend architecture powering our ML workflows—high-volume ingestion, feature pipelines, vector search, and low-latency inference endpoints. His engineering rigor improved data quality, reduced latency, and enabled faster experimentation across our AI stack.",
+    author: "Client",
+    role: "CTO, FynCom",
   },
 ];
 
