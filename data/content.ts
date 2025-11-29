@@ -438,7 +438,7 @@ export const contactInfo = {
     { type: "country", label: "Country", value: "United States", icon: "location" },
     { type: "city", label: "City", value: "Merced, CA", icon: "location" },
     { type: "email", label: "Email", value: "AdrianEG2026@gmail.com", icon: "email", href: "mailto:AdrianEG2026@gmail.com" },
-    { type: "phone", label: "Phone", value: "+1 (777) 777-7777", icon: "phone", href: "tel:+17777777777" },
+    { type: "phone", label: "Phone", value: "+1 (909) 729-1297", icon: "phone", href: "tel:+19097291297" },
   ],
   socialLinks: [
     { name: "GitHub", href: "https://github.com/AdrianEGraphene", icon: "github" },
