@@ -137,8 +137,8 @@ export const testimonials = [
   {
     quote:
       "Adrian rebuilt the backend architecture powering our ML workflows—high-volume ingestion, feature pipelines, vector search, and low-latency inference endpoints. His engineering rigor improved data quality, reduced latency, and enabled faster experimentation across our AI stack.",
-    author: "Client",
-    role: "CTO, FynCom",
+    author: "MarShall",
+    role: "Technical Advisor, Twill",
   },
 ];
 
@@ -151,30 +151,29 @@ export const contactCta = {
 
 export const experienceTimeline = [
   {
-    company: "FynCom",
-    role: "Lead AI & Backend Engineer",
-    period: "Nov 2023 - Oct 2025 · Part-time · Remote",
-    location: "NY, NY",
-    highlights: [
-      "Designed Python (FastAPI/Flask) microservices with typed REST/GraphQL schemas, rate-limits, idempotency, retries/timeouts, and RBAC.",
-      "Rebuilt the GraphQL data layer with field-level auth, batching, and caching to reduce P95 latency across large catalogs.",
-      "Engineered high-throughput ingestion pipelines (Kafka/SQS + workers) processing 150M+ artifacts with checksum/dedup and schema validation.",
-      "Optimized PostgreSQL/Redis/S3 (Parquet) storage and implemented Elasticsearch/OpenSearch search for enterprise-scale discovery.",
-      "Deployed services on AWS (ECS/EKS) with Docker/Kubernetes/Terraform and modernized CI/CD with image scanning and blue-green/canary rollouts.",
-    ],
-  }
-  ,
-  {
     company: "Harvest LLC",
     role: "Lead Backend Engineer",
-    period: "Apr 2025 – Aug 2025 · Contract · Remote",
-    location: "Wimington, DE",
+    period: "Apr 2025 – Oct 2025 · Contract · Remote",
+    location: "Wilmington, DE",
     highlights: [
       "Architected Go and Python/FastAPI microservices for real-time querying and ingestion with OAuth2/JWT auth, idempotency, rate limits, retries/timeouts, and correlation IDs.",
       "Exposed typed REST/gRPC APIs with OpenAPI contracts and added pagination, backpressure, Redis caching, and connection pooling to improve throughput and p95 latency.",
       "Built scheduled ETL/ELT pipelines over WDI/Eurostat/IMF with normalization, checksum/dedup, schema-drift detection, and reproducible S3/Parquet snapshots.",
       "Deployed containerized services to AWS (ECS/EKS + ALB) with autoscaling, blue-green/canary rollouts, modern CI/CD, and full OpenTelemetry observability.",
       "Integrated LangChain + Pinecone for internal RAG/semantic search with hybrid retrieval, reranking, prompt-safety checks, and cost-controlled inference routing.",
+    ],
+  },
+  {
+    company: "Citadel LLC",
+    role: "Software Engineer",
+    period: "Dec 2023 – Mar 2025 · Part-Time · Remote",
+    location: "Chicago, IL",
+    highlights: [
+      "Architected high-reliability Python/FastAPI and Go microservices with OAuth2/JWT auth, retries, rate limiting, and correlation IDs for real-time ingestion and query pipelines.",
+      "Built scalable ETL/ELT and automation pipelines using Celery, RabbitMQ, Redis, Airflow, and Kubeflow for ingestion, data normalization, and model training workflows.",
+      "Engineered AI-driven RAG and semantic search platforms with LangChain, Pinecone/FAISS, embeddings, and FastAPI endpoints, including Graph-RAG architectures for advanced document intelligence.",
+      "Deployed containerized backend and GPU-accelerated inference systems with Docker, Kubernetes, ECS/EKS, Terraform, and OpenTelemetry for scalable, observable, and fault-tolerant operations.",
+      "Implemented MLOps, CI/CD, and security best practices using MLflow, GitOps, Jenkins, Istio, and OAuth2, improving model deployment reliability, monitoring, and operational governance.",
     ],
   },
   {
@@ -192,8 +191,8 @@ export const experienceTimeline = [
   },
   {
     company: "Zillow",
-    role: "AI/ML Engineer",
-    period: "Jun 2020 – Oct 2022 · Full-time · Remote",
+    role: "Senior Software Engineer",
+    period: "Jun 2019 – Oct 2022 · Full-time · Remote",
     location: "Seattle, WA",
     highlights: [
       "Designed and operated Go microservices (REST/gRPC) for forex trading platforms—order routing, positions/PnL, risk checks, balances, and audit trails with idempotent handlers, rate limits, and schema-validated I/O.",
@@ -206,7 +205,7 @@ export const experienceTimeline = [
   {
     company: "Twills",
     role: "Full Stack Engineer",
-    period: "Nov 2017 – Oct 2019 · Full-time · Remote",
+    period: "Nov 2017 – Apr 2019 · Full-time · Remote",
     location: "NY, NY",
     highlights: [
       "Rebuilt and scaled the auto-parts e-commerce backend using Node.js/Express and PHP/Laravel, delivering reliable ordering, accounts, and catalog APIs for 1,000+ daily users.",
@@ -439,7 +438,7 @@ export const contactInfo = {
     { type: "country", label: "Country", value: "United States", icon: "location" },
     { type: "city", label: "City", value: "Merced, CA", icon: "location" },
     { type: "email", label: "Email", value: "AdrianEG2026@gmail.com", icon: "email", href: "mailto:AdrianEG2026@gmail.com" },
-    { type: "phone", label: "Phone", value: "+1 (777) 777-7777", icon: "phone", href: "tel:+17777777777" },
+    { type: "phone", label: "Phone", value: "+1 (909) 729-1297", icon: "phone", href: "tel:+19097291297" },
   ],
   socialLinks: [
     { name: "GitHub", href: "https://github.com/AdrianEGraphene", icon: "github" },
