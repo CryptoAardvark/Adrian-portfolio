@@ -1,4 +1,4 @@
-export type ProjectCategory = "AI" | "DataScience" |"Backend" | "Full-Stack";
+export type ProjectCategory = "AI/ML" | "Backend" | "DataScience" | "Full-Stack";
 
 export type ProjectMedia =
   | {
@@ -48,9 +48,9 @@ const gradientImage = encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg
 
 export const projectFilters = [
   "All",
-  "AI",
-  "DataScience",
+  "AI/ML",
   "Backend",
+  "DataScience",
   "Full-Stack",
 ] as const;
 
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     title: "DataHaven – AI Data Visualization Platform (MVP)",
     summary: "AI-driven analytics platform enabling real-time, data-driven Q&A across large economic datasets. Built with a Go microservices backend, FastAPI AI services, and a React-based visualization layer using D3.js and Chart.js. Frontend is fully operational; backend and AI pipelines (Pinecone, OpenAI) were migrated toward production architecture.",
     description: "AI Data Visualization Platform",
-    category: "AI",
+    category: "AI/ML",
     tags: ["React", "Python", "Go", "FastAPI", "PostgreSQL", "LLMs", "Redis", "Docker", "AWS", "Vercel", "D3.js", "Chart.js"],
     media: {
       type: "video",
@@ -237,7 +237,7 @@ export const projects: Project[] = [
     title: "AI-Driven Job Search Platform",
     summary: "Intelligent job search platform leveraging LLMs, NLP pipelines, and OCR to deliver highly accurate job-matching experiences. Improved frontend performance by 30% and implemented advanced SEO optimization to boost organic visibility. Built with a modern, scalable architecture integrating vector search, ML workflows, and cloud-native infrastructure.",
     description: "AI-Driven Job Search Platform",
-    category: "AI",
+    category: "AI/ML",
     tags: ["LLMs", "NLP", "OCR", "Vector Databases", "PostgreSQL", "Redis", "Kubernetes", "MLflow"],
     media: {
       type: "image",
