@@ -65,7 +65,7 @@ export const projects: Project[] = [
     media: {
       type: "video",
       src: "image/projects/1/1.mp4",
-      poster: "image/projects/1/1.jpg",
+      poster: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
       alt: "AI Data Visualization Platform (MVP)",
     },
     details: {

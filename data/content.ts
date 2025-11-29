@@ -59,7 +59,7 @@ export const featuredProjects = [
       "D3.js",
       "Chart.js"
     ],
-    image: "/image/projects/2/2.jpg",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
     link: "#",
   },
   {
