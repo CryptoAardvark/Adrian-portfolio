@@ -10,7 +10,7 @@ export const heroContent = {
   },
   secondaryCta: {
     label: "Download Resume",
-    href: "/resume.pdf",
+    href: "/resume/resume.pdf",
   },
 };
 
