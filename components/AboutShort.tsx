@@ -14,7 +14,7 @@ export function AboutShort() {
         {/* Profile Image */}
         <div className="h-32 w-32 rounded-full border border-white/10 shadow-[0_30px_90px_rgba(0,0,0,0.4)] overflow-hidden">
           <img
-            src="/image/adrian.jpg" // <-- Replace this with your image path
+            src="/image/adrian.png" // <-- Replace this with your image path
             alt="Adrian Garcia"
             className="h-full w-full object-cover"
           />

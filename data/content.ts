@@ -60,27 +60,29 @@ export const featuredProjects = [
       "Chart.js"
     ],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-    link: "#",
+    link: "/portfolio",
   },
   {
-    id: "laboro",
-    title: "Laboro – AI-Driven Job Search Platform",
-    description:
-      "Intelligent job search platform leveraging LLMs, NLP pipelines, and OCR to deliver highly accurate job-matching experiences. Improved frontend performance by 30% and implemented advanced SEO optimization to boost organic visibility. Built with a modern, scalable architecture integrating vector search, ML workflows, and cloud-native infrastructure.",
-    outcome:
-      "Increased application performance by 30% and enhanced search accuracy through AI-driven matching and vector retrieval.",
-    tags: [
+    "id": "company-analytics",
+    "title": "Company Data Analytics — End-to-End Data & Predictive Modeling Pipeline",
+    "description": "Built a Python/FastAPI and Airflow pipeline to scrape, clean, and validate company data, generate embeddings with Ollama, and run vector-based retrieval for similarity and trend analysis. Trained predictive models for stability and growth scoring, and delivered automated reports and APIs for integrating analytics and model outputs into other tools.",
+    "outcome": "Delivered a fully automated analytics and ML pipeline that improved data quality, reduced manual processing time, and enabled accurate, real-time company risk and growth predictions.",
+    "tags": [
+      "FastAPI",
+      "Airflow",
+      "Ollama",
       "LLMs",
-      "NLP",
-      "OCR",
-      "Vector Databases",
-      "PostgreSQL",
-      "Redis",
-      "Kubernetes",
-      "MLflow"
+      "Embeddings",
+      "Scikit-Learn",
+      "Predictive Models",
+      "Data Pipelines",
+      "Jupyter",
+      "Quarto",
+      "ETL",
+      "PostgreSQL"
     ],
-    image: "/image/projects/2/2.jpg",
-    link: "#",
+    image: "/image/projects/data/data.png",
+    link: "/portfolio",
   },
   {
     id: "trading-platform",
@@ -102,7 +104,7 @@ export const featuredProjects = [
       "React"
     ],
     image: "/image/projects/3/3.jpg",
-    link: "#",
+    link: "/portfolio",
   },
 ];
 
