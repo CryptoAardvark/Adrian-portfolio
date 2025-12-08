@@ -8,10 +8,6 @@ export const heroContent = {
     label: "Explore Portfolio",
     href: "/portfolio",
   },
-  secondaryCta: {
-    label: "Download Resume",
-    href: "/resume.pdf",
-  },
 };
 
 export const metrics = [
