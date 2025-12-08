@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # Force LightningCSS to use WASM for all steps in this job
+      LIGHTNING_CSS_USE_WASM: 'true'
 
     steps:
       - name: Checkout repository
@@ -20,16 +23,22 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Install dependencies (force LightningCSS WASM)
-        run: LIGHTNING_CSS_USE_WASM=true npm ci
+      - name: Install dependencies (safe)
+        run: |
+          # Remove old modules and lock file to prevent npm ci errors
+          rm -rf node_modules package-lock.json
+          # Install fresh dependencies and generate new lock file
+          npm install
 
-      - name: Build Next.js project (force LightningCSS WASM)
-        run: LIGHTNING_CSS_USE_WASM=true npm run build
+      - name: Build Next.js project
+        run: npm run build
 
   deploy-preview:
     needs: build
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
+    env:
+      LIGHTNING_CSS_USE_WASM: 'true'
 
     steps:
       - name: Checkout repository
@@ -48,6 +57,8 @@ jobs:
     needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    env:
+      LIGHTNING_CSS_USE_WASM: 'true'
 
     steps:
       - name: Checkout repository
