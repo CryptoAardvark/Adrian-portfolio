@@ -9,9 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     env:
-      # Fix lightningcss native binary issues during CI builds
+      # Force LightningCSS to use WASM for all steps in this job
       LIGHTNING_CSS_USE_WASM: 'true'
 
     steps:
@@ -24,23 +23,22 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Install dependencies
+      - name: Install dependencies (safe)
         run: |
-          # Workaround for npm bug with optional dependencies (https://github.com/npm/cli/issues/4828)
-          # Remove node_modules to force fresh install of optional dependencies
-          rm -rf node_modules
-          # Install dependencies (postinstall script will ensure optional deps are installed)
+          # Remove old modules and lock file to prevent npm ci errors
+          rm -rf node_modules package-lock.json
+          # Install fresh dependencies and generate new lock file
           npm install
 
       - name: Build Next.js project
-        env:
-          LIGHTNING_CSS_USE_WASM: 'true'
         run: npm run build
 
   deploy-preview:
     needs: build
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
+    env:
+      LIGHTNING_CSS_USE_WASM: 'true'
 
     steps:
       - name: Checkout repository
@@ -59,6 +57,8 @@ jobs:
     needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    env:
+      LIGHTNING_CSS_USE_WASM: 'true'
 
     steps:
       - name: Checkout repository
