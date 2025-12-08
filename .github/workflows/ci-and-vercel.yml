@@ -9,9 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      # Force LightningCSS to use WASM (applies to all steps in this job)
-      LIGHTNING_CSS_USE_WASM: 'true'
 
     steps:
       - name: Checkout repository
@@ -23,21 +20,17 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Install dependencies
-        run: |
-          rm -rf node_modules
-          npm install
+      - name: Install dependencies (force LightningCSS WASM)
+        run: LIGHTNING_CSS_USE_WASM=true npm ci
 
-      - name: Build Next.js project
-        run: npm run build
+      - name: Build Next.js project (force LightningCSS WASM)
+        run: LIGHTNING_CSS_USE_WASM=true npm run build
 
   deploy-preview:
     needs: build
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
-    env:
-      LIGHTNING_CSS_USE_WASM: 'true'
-      
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -49,13 +42,12 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           vercel-args: '--prod=false'
+          working-directory: ./
 
   deploy-prod:
     needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    env:
-      LIGHTNING_CSS_USE_WASM: 'true'
 
     steps:
       - name: Checkout repository
@@ -68,3 +60,4 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           vercel-args: '--prod'
+          working-directory: ./
