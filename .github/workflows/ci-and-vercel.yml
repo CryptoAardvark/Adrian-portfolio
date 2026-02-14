@@ -24,11 +24,9 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        env:
-          LIGHTNING_CSS_USE_WASM: 'true'
         run: |
           rm -rf node_modules
-          npm install
+          npm install --include=optional
 
       - name: Build Next.js project
         env:
