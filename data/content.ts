@@ -149,6 +149,23 @@ export const contactCta = {
 
 export const experienceTimeline = [
   {
+    company: "Toptal",
+    role: "Senior Backend and AI Engineer",
+    period: "Dec 2025 – Present · Contract · Remote",
+    location: "SanFrancisco, CA",
+    highlights: [
+      "Built and productionized a NER Extraction Service for Person/Organization/Location entity extraction from news content using a fine-tuned Transformer token-classification model, including evaluation-aligned post processing for accurate multi-word entities.",
+      "Delivered low-latency FastAPI inference API for both real-time and batch workloads, meeting specification requirements.",
+      "Added a Redis-backed inference cache controlled via environment configuration to improve repeat-request performance and stabilize tail latency under load.",
+      "Validated performance with Locust achieving ~5 ms median / 220 ms p99 with Redis enabled versus 38 ms median / 710 ms p99 without Redis (GPU run), with 0% failures.",
+      "Containerized the service for both CPU and GPU execution and provided Docker Compose orchestration for Redis-enabled deployments.",
+      "Implemented environment-driven runtime configuration (automatic device selection, model path.",
+      "configuration, optional Hugging Face Hub loading) to ensure consistent behavior across environments.",
+      "Added unit and integration test coverage for core API and caching behavior (health checks, inference endpoints, Redis cache tests) to improve maintainability and release confidence.",
+      ,
+    ],
+  },
+  {
     company: "Harvest LLC",
     role: "Lead Backend Engineer",
     period: "Apr 2025 – Oct 2025 · Contract · Remote",
@@ -240,6 +257,16 @@ export const educationHistory = [
 ];
 
 export const certifications = [
+  {
+    title: "Python Certification",
+    issuer: "testdome",
+    year: "2025",
+  },
+  {
+    title: "React Redux Certification",
+    issuer: "testdome",
+    year: "2025",
+  },
   {
     title: "C++ Certification",
     issuer: "Coding Game",
