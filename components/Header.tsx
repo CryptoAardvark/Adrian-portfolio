@@ -50,7 +50,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <div className="hidden flex-col text-right text-xs text-[var(--text-muted)] sm:flex">
             <span>AdrianEG2026@gmail.com</span>
-            <span>+1 (909) 729-1297</span>
+            <span>+1 (949) 979-5597 </span>
           </div>
           <Link
             href="/contact"
